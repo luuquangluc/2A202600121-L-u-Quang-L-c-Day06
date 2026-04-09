@@ -8,8 +8,8 @@ from src.chain import build_rag_chain
 from src.evaluator import llm_judge, extract_score
 
 # ===== CONFIG =====
-DATASET_PATH = "eval_dataset.json"
-OUTPUT_DIR = "eval_logs"
+DATASET_PATH = "test_dataset.json"
+OUTPUT_DIR = "test_logs"
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 

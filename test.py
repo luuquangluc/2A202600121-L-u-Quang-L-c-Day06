@@ -8,15 +8,18 @@ from src.chain import build_rag_chain
 from src.evaluator import llm_judge, extract_score
 
 # ===== CONFIG =====
-DATASET_PATH = "eval_dataset.json"
-OUTPUT_DIR = "eval_logs"
+DATASET_PATH = "test_dataset.json"
+OUTPUT_DIR = "extras"
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
 RESULT_FILE = f"{OUTPUT_DIR}/results_{timestamp}.json"
 REPORT_FILE = f"{OUTPUT_DIR}/report_{timestamp}.txt"
+MD_LOG_FILE = f"{OUTPUT_DIR}/prompt-test-log_{timestamp}.md"
 
-# ===== LOAD =====
+# ===== PREP =====
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
 with open(DATASET_PATH, "r", encoding="utf-8") as f:
     dataset = json.load(f)
 
@@ -37,13 +40,20 @@ def keyword_overlap(pred, gt):
     return len(gt_words & pred_words) / max(len(gt_words), 1)
 
 results = []
+md_logs = []
+
+# ===== INIT MD LOG =====
+md_logs.append(f"# Prompt Test Log\n\n")
+md_logs.append(f"Time: {timestamp}\n\n")
 
 # ===== RUN =====
 for sample in tqdm(dataset):
     question = sample["question"]
     gt = sample["ground_truth"]
 
+    start_time = time.time()
     response = rag_chain.invoke(question)
+    latency = time.time() - start_time
 
     # ---- metrics ----
     acc = soft_match(response, gt)
@@ -53,7 +63,6 @@ for sample in tqdm(dataset):
     judge_text = llm_judge(response, gt)
     judge_score = extract_score(judge_text)
 
-    # 🔥 FIX: override accuracy bằng LLM
     if judge_score is not None and judge_score >= 4:
         acc = 1
 
@@ -65,8 +74,28 @@ for sample in tqdm(dataset):
         "accuracy": acc,
         "overlap": overlap,
         "llm_score": judge_score,
+        "latency": latency,
         "judge_raw": judge_text
     })
+
+    # ===== MD LOG =====
+    md_logs.append(f"""
+## ID {sample['id']}
+
+**Question:** {question}
+
+**Prediction:** {response}
+
+**Ground Truth:** {gt}
+
+**Metrics**
+- Accuracy: {acc}
+- Overlap: {overlap:.2f}
+- LLM Score: {judge_score}
+- Latency: {latency:.2f}s
+
+---
+""")
 
     time.sleep(1)
 
@@ -77,15 +106,13 @@ avg_acc = sum(r["accuracy"] for r in results) / len(results)
 avg_overlap = sum(r["overlap"] for r in results) / len(results)
 avg_llm = sum(valid_llm_scores) / len(valid_llm_scores) if valid_llm_scores else 0
 
-# ===== ERROR ANALYSIS =====
 error_cases = [r for r in results if r["accuracy"] == 0]
 
-# ===== SAVE =====
-os.makedirs(OUTPUT_DIR, exist_ok=True)
-
+# ===== SAVE JSON =====
 with open(RESULT_FILE, "w", encoding="utf-8") as f:
     json.dump(results, f, ensure_ascii=False, indent=2)
 
+# ===== SAVE REPORT =====
 with open(REPORT_FILE, "w", encoding="utf-8") as f:
     f.write("===== EVALUATION REPORT =====\n")
     f.write(f"Time: {timestamp}\n")
@@ -112,6 +139,11 @@ with open(REPORT_FILE, "w", encoding="utf-8") as f:
         f.write(f"GT: {r['ground_truth']}\n")
         f.write(f"Acc={r['accuracy']} | Overlap={r['overlap']:.2f} | LLM={r['llm_score']}\n")
 
+# ===== SAVE MARKDOWN LOG =====
+with open(MD_LOG_FILE, "w", encoding="utf-8") as f:
+    f.write("\n".join(md_logs))
+
 print("\n===== DONE =====")
-print(f"Saved results to: {RESULT_FILE}")
-print(f"Saved report to: {REPORT_FILE}")
+print(f"JSON: {RESULT_FILE}")
+print(f"REPORT: {REPORT_FILE}")
+print(f"MD LOG: {MD_LOG_FILE}")
