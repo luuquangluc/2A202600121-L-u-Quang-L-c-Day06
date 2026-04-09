@@ -22,17 +22,10 @@ LLM_TEMPERATURE = 0.0
 
 RETRIEVER_TOP_K = 5
 BM25_TOP_K = 5
-# Số chunk retrieve ban đầu trước khi rerank
-RETRIEVER_CANDIDATE_K = 12
 
 # Trọng số hybrid search: [BM25, Dense]  — tổng = 1.0
 BM25_WEIGHT = 0.4
 DENSE_WEIGHT = 0.6
-
-# Cross-encoder reranker
-ENABLE_RERANKER = True
-RERANKER_MODEL = "BAAI/bge-reranker-v2-m3"
-RERANKER_TOP_K = 5
 
 CHUNKS_PATH = BASE_DIR / "chroma_db" / "chunks.pkl"
 
