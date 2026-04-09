@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "question": "Tôi có thể phản hồi đánh giá khách hàng không?",
+    "prediction": "Có, bạn có thể phản hồi lại đánh giá của khách hàng. Bạn cần thực hiện trong vòng 48 giờ kể từ khi khách hàng để lại đánh giá. Để phản hồi, bạn mở ứng dụng Xanh SM Merchant, chọn mục “Đánh giá”, sau đó chọn “Gửi phản hồi”, nhập nội dung phản hồi và nhấn “Gửi”. Lưu ý rằng sau khi phản hồi được gửi, nội dung sẽ không thể chỉnh sửa.",
+    "ground_truth": "Có, trong vòng 48 giờ kể từ khi khách hàng để lại đánh giá.",
+    "accuracy": 1,
+    "overlap": 1.0,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 2,
+    "question": "Làm sao để reply review khách?",
+    "prediction": "Quý Đối tác có thể phản hồi lại đánh giá của Khách hàng trong vòng 48 giờ kể từ khi Khách hàng để lại đánh giá bằng cách thực hiện các bước sau:\n\n1. Mở ứng dụng Xanh SM Merchant, chọn mục “Đánh giá”.\n2. Chọn “Gửi phản hồi”.\n3. Nhập nội dung phản hồi và nhấn “Gửi”.\n\nLưu ý: Sau khi phản hồi được gửi, nội dung sẽ không thể chỉnh sửa.",
+    "ground_truth": "Mở ứng dụng Xanh SM Merchant, chọn mục Đánh giá và gửi phản hồi.",
+    "accuracy": 1,
+    "overlap": 0.8571428571428571,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 3,
+    "question": "Khách đánh giá sai sự thật thì làm sao?",
+    "prediction": "Trong trường hợp khách hàng đánh giá sai sự thật, vi phạm quy định (nội dung bịa đặt, ngôn từ không phù hợp, spam…), bạn có thể gửi yêu cầu gỡ đánh giá nếu Xanh Ngon có đủ căn cứ để hỗ trợ. Ngoài ra, bạn cũng nên chủ động phản hồi trực tiếp dưới phần bình luận để giải thích rõ ràng, thiện chí về sự cố (nếu có), gửi lời xin lỗi và cảm ơn khách hàng đã góp ý, cũng như đưa ra hướng khắc phục hoặc cam kết cải thiện trải nghiệm. Mục tiêu là giúp khách hàng hiểu rõ hơn tình huống, giảm cảm xúc tiêu cực, và nâng cao uy tín thương hiệu một cách tự nhiên.",
+    "ground_truth": "Chỉ gỡ nếu vi phạm và có căn cứ, còn lại nên phản hồi công khai.",
+    "accuracy": 1,
+    "overlap": 0.625,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 4,
+    "question": "Thu nhập tài xế GSM gồm gì?",
+    "prediction": "Thu nhập hàng tháng của tài xế GSM sẽ bao gồm lương cơ bản theo vùng và các khoản thưởng theo chính sách tại thời điểm đó. Tài xế có thể kiểm tra chi tiết thu nhập trên ứng dụng bằng cách lựa chọn mục \"Thống kê thu nhập\" tại \"Danh sách tổng quan\" bên trái màn hình ứng dụng.",
+    "ground_truth": "Bao gồm lương cơ bản và các khoản thưởng.",
+    "accuracy": 1,
+    "overlap": 0.8888888888888888,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 5,
+    "question": "Tôi có phải trả phí đào tạo không?",
+    "prediction": "Lái xe sẽ được đào tạo không mất phí về kiến thức sản phẩm, tiêu chuẩn dịch vụ của GSM. Do đó, bạn không phải trả phí đào tạo.",
+    "ground_truth": "Không, đào tạo miễn phí.",
+    "accuracy": 1,
+    "overlap": 0.4,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 6,
+    "question": "Tài xế có được khám sức khỏe không?",
+    "prediction": "Trong ngữ cảnh hiện tại, không có thông tin cụ thể về việc tài xế có được khám sức khỏe hay không. Tuy nhiên, tài xế cần nộp giấy khám sức khỏe cùng với các giấy tờ khác khi trúng tuyển. Nếu bạn cần thêm thông tin chi tiết, vui lòng liên hệ với bộ phận tuyển dụng của công ty.",
+    "ground_truth": "Có, được khám sức khỏe định kỳ.",
+    "accuracy": 0,
+    "overlap": 0.5714285714285714,
+    "llm_score": 2,
+    "judge_raw": "2"
+  },
+  {
+    "id": 7,
+    "question": "Có được đóng bảo hiểm xã hội không?",
+    "prediction": "Xin lỗi, nhưng tôi không có thông tin về việc đóng bảo hiểm xã hội trong ngữ cảnh đã cung cấp. Bạn có thể tham khảo các nguồn thông tin khác hoặc liên hệ với cơ quan bảo hiểm xã hội để biết thêm chi tiết.",
+    "ground_truth": "Có, khi ký hợp đồng chính thức.",
+    "accuracy": 0,
+    "overlap": 0.0,
+    "llm_score": 1,
+    "judge_raw": "1"
+  },
+  {
+    "id": 8,
+    "question": "Tài xế có được đào tạo không?",
+    "prediction": "Có, tài xế sẽ được đào tạo không mất phí về kiến thức sản phẩm, tiêu chuẩn dịch vụ của GSM.",
+    "ground_truth": "Có, được đào tạo bài bản miễn phí.",
+    "accuracy": 1,
+    "overlap": 0.5,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 9,
+    "question": "Nhận xe có phải trả tiền không?",
+    "prediction": "Tài xế cần đóng cọc phụ phí trách nhiệm 10.000.000đ khi nhận xe, ngoài ra không phải thanh toán bất cứ khoản tiền nào khác.",
+    "ground_truth": "Có, cần đặt cọc 10 triệu đồng.",
+    "accuracy": 1,
+    "overlap": 0.2857142857142857,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 10,
+    "question": "Có khoản phí nào khi nhận xe?",
+    "prediction": "Tài xế cần đóng cọc phụ phí trách nhiệm 10.000.000đ khi nhận xe, ngoài ra không phải thanh toán bất cứ khoản tiền nào khác.",
+    "ground_truth": "Chỉ cần đóng cọc 10 triệu, không có phí khác.",
+    "accuracy": 1,
+    "overlap": 0.6,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 11,
+    "question": "Tiền cọc xe là bao nhiêu?",
+    "prediction": "Tiền cọc xe là 10.000.000đ.",
+    "ground_truth": "10.000.000 đồng.",
+    "accuracy": 1,
+    "overlap": 0.0,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 12,
+    "question": "Khi nào được hoàn lại tiền cọc?",
+    "prediction": "Khoản cọc phụ phí trách nhiệm sẽ được hoàn lại sau khi bạn hoàn tất hồ sơ nghỉ việc, xác nhận công nợ và các khoản truy thu khác (nếu có).",
+    "ground_truth": "Sau khi hoàn tất hồ sơ nghỉ việc và công nợ.",
+    "accuracy": 0,
+    "overlap": 0.8181818181818182,
+    "llm_score": 3,
+    "judge_raw": "3"
+  },
+  {
+    "id": 13,
+    "question": "Một xe có bao nhiêu tài xế?",
+    "prediction": "Một xe có thể có hai hình thức sử dụng: một tài xế nhận một xe hoặc hai tài xế nhận chung một xe.",
+    "ground_truth": "Có thể 1 hoặc 2 tài xế.",
+    "accuracy": 0,
+    "overlap": 0.5714285714285714,
+    "llm_score": 3,
+    "judge_raw": "3"
+  },
+  {
+    "id": 14,
+    "question": "Có phải dùng chung xe không?",
+    "prediction": "Có hai hình thức nhận xe: một tài xế nhận một xe hoặc hai tài xế nhận chung một xe. Bạn có thể chọn hình thức phù hợp với mình.",
+    "ground_truth": "Có thể dùng chung hoặc riêng.",
+    "accuracy": 1,
+    "overlap": 0.6666666666666666,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 15,
+    "question": "Chi phí bảo dưỡng xe ai trả?",
+    "prediction": "Chi phí bảo dưỡng định kỳ do công ty thanh toán.",
+    "ground_truth": "Công ty chi trả bảo dưỡng định kỳ.",
+    "accuracy": 1,
+    "overlap": 0.75,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 16,
+    "question": "Xe hỏng thì ai sửa?",
+    "prediction": "Khi xe cần sửa chữa hoặc bảo dưỡng, bạn hãy mang xe đến các nhà phân phối (NPP) và xưởng dịch vụ (XDV) của VinFast. Công ty sẽ hỗ trợ bạn trong việc sửa chữa và bảo dưỡng xe.",
+    "ground_truth": "Công ty hỗ trợ tùy trường hợp.",
+    "accuracy": 1,
+    "overlap": 0.5714285714285714,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 17,
+    "question": "Tai nạn thì xử lý chi phí thế nào?",
+    "prediction": "Khi xảy ra tai nạn, chi phí xử lý sẽ được tính như sau:\n\n- Nếu tai nạn xảy ra do lỗi của Khách Hàng, GSM sẽ xem xét cung cấp xe thay thế theo yêu cầu của Khách Hàng, nhưng Khách Hàng phải thanh toán chi phí thay thế xe và chi phí sửa chữa xe cũ phát sinh từ sự cố, hỏng hóc hoặc tai nạn không sử dụng được.\n\n- Nếu xe và/hoặc pin bị hỏng/lỗi do lỗi của nhà sản xuất, GSM sẽ cung cấp xe thay thế để Khách Hàng sử dụng mà không phải chịu chi phí.\n\nNgoài ra, tài xế cũng nên báo cáo sự cố ngay cho bộ phận chức năng để được hướng dẫn và hỗ trợ xử lý kịp thời.",
+    "ground_truth": "Tùy nguyên nhân và có quy chế hỗ trợ.",
+    "accuracy": 1,
+    "overlap": 0.2222222222222222,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 18,
+    "question": "Xe có camera không?",
+    "prediction": "Có, xe được trang bị camera. Từ ngày 13/04/2025, Xanh SM triển khai hệ thống giám sát an toàn toàn diện S2S – Secure to Safe trên các xe taxi điện, với camera kép (trong cabin và phía trước xe).",
+    "ground_truth": "Có hệ thống S2S với camera và AI.",
+    "accuracy": 1,
+    "overlap": 0.75,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 19,
+    "question": "Hệ thống S2S là gì?",
+    "prediction": "Hệ thống S2S – Secure to Safe là một hệ thống giám sát an toàn toàn diện được triển khai trên các xe taxi điện tại Hà Nội và TP.HCM từ ngày 13/04/2025. Hệ thống này bao gồm camera kép (trong cabin và phía trước xe), nút bấm khẩn cấp cho cả tài xế và hành khách, ghi âm nội bộ, cảm biến và trí tuệ nhân tạo (AI) giúp phân tích hành vi và xử lý tình huống bất thường. Dữ liệu từ hệ thống được mã hóa và chỉ có thể truy xuất theo yêu cầu chính thức từ cơ quan chức năng, đảm bảo quyền riêng tư và bảo mật tuyệt đối.",
+    "ground_truth": "Hệ thống giám sát an toàn có camera và AI.",
+    "accuracy": 1,
+    "overlap": 0.9,
+    "llm_score": 5,
+    "judge_raw": "5"
+  },
+  {
+    "id": 20,
+    "question": "Khách có quyền xem thông tin của mình không?",
+    "prediction": "Có, khách có quyền truy cập để xem thông tin của mình, trừ trường hợp pháp luật có quy định khác.",
+    "ground_truth": "Có quyền truy cập và chỉnh sửa thông tin.",
+    "accuracy": 0,
+    "overlap": 0.5555555555555556,
+    "llm_score": 3,
+    "judge_raw": "3"
+  },
+  {
+    "id": 21,
+    "question": "Tôi có thể xóa dữ liệu của mình không?",
+    "prediction": "Có, bạn có quyền xóa dữ liệu cá nhân của mình. Tuy nhiên, việc xóa dữ liệu sẽ không được thực hiện trong một số trường hợp theo quy định của pháp luật, chẳng hạn như khi pháp luật không cho phép xóa dữ liệu hoặc khi dữ liệu cần được lưu trữ để phục vụ cho các yêu cầu pháp lý, nghiên cứu khoa học, hoặc trong các tình huống khẩn cấp liên quan đến an ninh quốc gia. Nếu bạn muốn thực hiện việc xóa dữ liệu, bạn có thể gửi yêu cầu hợp lệ đến Công Ty.",
+    "ground_truth": "Có quyền yêu cầu xóa thông tin.",
+    "accuracy": 1,
+    "overlap": 0.7142857142857143,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 22,
+    "question": "Có thể rút lại sự đồng ý không?",
+    "prediction": "Có, Chủ Thể Dữ Liệu Cá Nhân có quyền rút lại sự đồng ý của mình. Tuy nhiên, việc rút lại sự đồng ý có thể ảnh hưởng đến khả năng cung cấp hoặc duy trì các sản phẩm, dịch vụ của Công Ty đối với Chủ Thể Dữ Liệu Cá Nhân. Công Ty sẽ xem xét và quyết định về việc tiếp tục cung cấp dịch vụ hoặc chấm dứt quan hệ hợp đồng dựa trên yêu cầu của Chủ Thể Dữ Liệu Cá Nhân.",
+    "ground_truth": "Có quyền rút lại sự đồng ý.",
+    "accuracy": 1,
+    "overlap": 0.8571428571428571,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 23,
+    "question": "Khách có quyền phản đối xử lý dữ liệu không?",
+    "prediction": "Có, Khách hàng có quyền phản đối xử lý dữ liệu của mình theo quy định.",
+    "ground_truth": "Có quyền phản đối xử lý thông tin.",
+    "accuracy": 1,
+    "overlap": 0.75,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 24,
+    "question": "Khách hàng phải làm gì để bảo vệ thông tin?",
+    "prediction": "Khách hàng có thể thực hiện các biện pháp sau để bảo vệ thông tin của mình:\n\n1. **Đăng ký/hủy đăng ký trên ứng dụng Xanh SM**: Khách hàng có thể linh hoạt quản lý tài khoản của mình bất cứ lúc nào.\n\n2. **Cung cấp thông tin cần thiết**: Chỉ cung cấp thông tin mà khách hàng đồng ý và cần thiết cho việc sử dụng dịch vụ.\n\n3. **Theo dõi thông tin cá nhân**: Khách hàng nên thường xuyên kiểm tra và cập nhật thông tin cá nhân của mình để đảm bảo tính chính xác và bảo mật.\n\n4. **Liên hệ với dịch vụ khách hàng**: Nếu có bất kỳ nghi ngờ nào về việc bảo mật thông tin, khách hàng nên liên hệ với bộ phận chăm sóc khách hàng để được hỗ trợ.\n\nNgoài ra, Công Ty cũng đã áp dụng các biện pháp bảo mật cần thiết để đảm bảo thông tin của khách hàng được bảo vệ an toàn.",
+    "ground_truth": "Tự bảo vệ và báo khi có rò rỉ.",
+    "accuracy": 1,
+    "overlap": 0.4444444444444444,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 25,
+    "question": "Khách có trách nhiệm gì với dữ liệu?",
+    "prediction": "Trong ngữ cảnh được cung cấp, không có thông tin cụ thể về trách nhiệm của khách hàng đối với dữ liệu. Nếu bạn cần thông tin chi tiết hơn về trách nhiệm của khách hàng liên quan đến dữ liệu, tôi không có thông tin để trả lời.",
+    "ground_truth": "Cung cấp thông tin chính xác và bảo vệ dữ liệu.",
+    "accuracy": 0,
+    "overlap": 0.45454545454545453,
+    "llm_score": 2,
+    "judge_raw": "2"
+  },
+  {
+    "id": 26,
+    "question": "Có thể khiếu nại dịch vụ không?",
+    "prediction": "Có, bạn có thể khiếu nại dịch vụ. Trong trường hợp có tranh chấp hoặc khiếu nại liên quan đến dịch vụ, bạn có quyền thực hiện việc khiếu nại. Nếu bạn không thể tự mình khiếu nại do ốm đau, già yếu hoặc lý do khách quan khác, bạn có thể ủy quyền cho người khác thực hiện việc khiếu nại thay cho mình. Việc ủy quyền cần phải bằng văn bản và có xác nhận của UBND xã, phường, thị trấn nơi bạn cư trú.",
+    "ground_truth": "Có quyền khiếu nại và tố cáo.",
+    "accuracy": 1,
+    "overlap": 0.7142857142857143,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 27,
+    "question": "Khiếu nại liên hệ ở đâu?",
+    "prediction": "Bạn có thể liên hệ với Tổng đài của Xanh SM để thực hiện khiếu nại. Nếu cần hỗ trợ thêm, bạn cũng có thể cung cấp các chứng từ, tài liệu liên quan để được hướng dẫn cụ thể hơn.",
+    "ground_truth": "Qua hotline hoặc email công ty.",
+    "accuracy": 0,
+    "overlap": 0.0,
+    "llm_score": 3,
+    "judge_raw": "3"
+  },
+  {
+    "id": 28,
+    "question": "Nếu khách không trả tiền thì sao?",
+    "prediction": "Xin lỗi, nhưng tôi không có thông tin về trường hợp khách không trả tiền trong ngữ cảnh đã cung cấp. Bạn có thể tham khảo thêm trong ứng dụng Xanh SM hoặc liên hệ với bộ phận hỗ trợ để được giải đáp cụ thể hơn.",
+    "ground_truth": "Tài xế có quyền phản ánh và khiếu nại.",
+    "accuracy": 0,
+    "overlap": 0.1111111111111111,
+    "llm_score": 2,
+    "judge_raw": "2"
+  },
+  {
+    "id": 29,
+    "question": "Tài xế có thể từ chối khách không?",
+    "prediction": "Trong ngữ cảnh hiện tại, không có thông tin cụ thể về việc tài xế có thể từ chối khách hay không. Tuy nhiên, tài xế nên tuân thủ các quy định và chính sách của Xanh SM Bike để đảm bảo quyền lợi và an toàn cho cả mình và khách hàng. Nếu có lý do hợp lý để từ chối, tài xế có thể thực hiện, nhưng nên thông báo rõ ràng cho khách hàng.",
+    "ground_truth": "Có thể từ chối nếu vi phạm.",
+    "accuracy": 0,
+    "overlap": 0.7142857142857143,
+    "llm_score": 3,
+    "judge_raw": "3"
+  },
+  {
+    "id": 30,
+    "question": "Khi nào tài xế được hủy chuyến?",
+    "prediction": "Trong ngữ cảnh đã cung cấp, tài xế có thể hủy chuyến trong một số trường hợp nhất định, nhưng không được phép thỏa thuận riêng với khách hàng để chở khách ngoài ứng dụng hoặc hủy chuyến trên ứng dụng khi đã chở khách. Nếu tài xế không đến đón với lý do hợp lý, dẫn đến việc khách hàng phải hủy chuyến, thì đó là một trường hợp có thể chấp nhận. Tuy nhiên, thông tin chi tiết về các lý do cụ thể mà tài xế có thể hủy chuyến không được đề cập trong ngữ cảnh.",
+    "ground_truth": "Khi khách không có mặt hoặc vi phạm.",
+    "accuracy": 0,
+    "overlap": 0.625,
+    "llm_score": 3,
+    "judge_raw": "3"
+  },
+  {
+    "id": 31,
+    "question": "Khách có phải thắt dây an toàn không?",
+    "prediction": "Có, khách hàng phải thắt dây an toàn trong suốt chuyến xe. Đây là một quy định nhằm đảm bảo an toàn cho bản thân và những người khác trong xe.",
+    "ground_truth": "Có, phải thắt dây an toàn.",
+    "accuracy": 1,
+    "overlap": 0.8333333333333334,
+    "llm_score": 5,
+    "judge_raw": "5"
+  },
+  {
+    "id": 32,
+    "question": "Có được ăn uống trên xe không?",
+    "prediction": "Xin lỗi, nhưng tôi không có thông tin về việc ăn uống trên xe trong ngữ cảnh đã cung cấp. Bạn có thể kiểm tra trực tiếp trên ứng dụng hoặc liên hệ với bộ phận hỗ trợ của Xanh SM để biết thêm chi tiết.",
+    "ground_truth": "Không được ăn uống trên xe.",
+    "accuracy": 0,
+    "overlap": 0.6666666666666666,
+    "llm_score": 2,
+    "judge_raw": "2"
+  },
+  {
+    "id": 33,
+    "question": "Có được hút thuốc trên xe không?",
+    "prediction": "Không, bạn không được hút thuốc trên xe.",
+    "ground_truth": "Không được hút thuốc.",
+    "accuracy": 1,
+    "overlap": 0.75,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 34,
+    "question": "Có được mang hàng hóa trên xe không?",
+    "prediction": "Trong ngữ cảnh hiện tại, không có thông tin cụ thể về việc mang hàng hóa trên xe. Nếu bạn cần thêm thông tin chi tiết về chính sách liên quan đến việc mang hàng hóa, vui lòng tham khảo trực tiếp trên ứng dụng Xanh SM hoặc liên hệ với bộ phận hỗ trợ của họ.",
+    "ground_truth": "Không, phải dùng dịch vụ khác.",
+    "accuracy": 0,
+    "overlap": 0.0,
+    "llm_score": 2,
+    "judge_raw": "2"
+  },
+  {
+    "id": 35,
+    "question": "Có được chở quá số người không?",
+    "prediction": "Không, tài xế không được chở quá số lượng hành khách được phép trên phương tiện. Tài xế có quyền từ chối hoặc hủy dịch vụ nếu số lượng hành khách vượt quá quy định.",
+    "ground_truth": "Không được vượt quá số người quy định.",
+    "accuracy": 1,
+    "overlap": 0.875,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 36,
+    "question": "Khách phải thanh toán khi nào?",
+    "prediction": "Khách hàng phải thanh toán đầy đủ Phí Người dùng và các khoản phát sinh cho Đối tác hoặc Xanh SM sau khi đã hoàn thành việc sử dụng Sản Phẩm. Bất kỳ khoản thanh toán nào theo lựa chọn đó sẽ không được hoàn lại.",
+    "ground_truth": "Phải thanh toán đầy đủ theo quy định.",
+    "accuracy": 0,
+    "overlap": 0.75,
+    "llm_score": 3,
+    "judge_raw": "3"
+  },
+  {
+    "id": 37,
+    "question": "Có hoàn tiền không?",
+    "prediction": "Có, nếu bạn gặp phải tình huống chuyến xe bị hủy và thực tế không sử dụng dịch vụ, cước phí chuyến xe sẽ được hoàn lại vào thẻ của bạn. Tuy nhiên, thời gian hoàn tiền có thể phụ thuộc vào chính sách của từng ngân hàng, vì vậy bạn nên kiểm tra sao kê hoặc giao dịch với ngân hàng của mình.",
+    "ground_truth": "Không, thanh toán là cuối cùng.",
+    "accuracy": 0,
+    "overlap": 0.0,
+    "llm_score": 1,
+    "judge_raw": "1"
+  },
+  {
+    "id": 38,
+    "question": "Tranh chấp giải quyết thế nào?",
+    "prediction": "Tranh chấp sẽ được giải quyết theo các bước sau:\n\n1. **Thương lượng**: Các bên sẽ cố gắng giải quyết tranh chấp thông qua thương lượng. \n\n2. **Thời gian thương lượng**: Nếu thương lượng không thành công trong vòng 30 ngày kể từ ngày phát sinh tranh chấp, các bên có thể đưa tranh chấp ra Tòa án có thẩm quyền tại Việt Nam để giải quyết.\n\n3. **Quy định pháp luật**: Hợp đồng và các điều khoản liên quan sẽ được điều chỉnh bởi pháp luật Việt Nam.\n\nNếu có bất kỳ khiếu nại nào giữa các bên, các bên cũng đồng ý sẽ đầu tiên đối thoại để cố gắng giải quyết. Nếu không thể thỏa thuận, mỗi bên đều có quyền khiếu nại tới cơ quan có thẩm quyền.",
+    "ground_truth": "Thương lượng hoặc ra tòa.",
+    "accuracy": 1,
+    "overlap": 0.6,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 39,
+    "question": "Luật nào áp dụng?",
+    "prediction": "\"Luật Áp Dụng\" là tất cả các luật hiện hành, quy chế, sắc lệnh, quy định, chính sách được quy định, pháp lệnh, nghị định thư, bộ quy tắc ngành, quy tắc giao thông đường bộ, giấy phép theo quy định, giấy phép hành nghề theo quy định hoặc yêu cầu của mọi tòa án hoặc cơ quan xét xử hay cơ quan hoặc bộ phận thuộc chính phủ, pháp định, quản lý, tư pháp, hành chính hoặc giám sát, có hiệu lực vào từng thời điểm trong thời hạn của Hợp Đồng này.",
+    "ground_truth": "Pháp luật Việt Nam.",
+    "accuracy": 0,
+    "overlap": 0.5,
+    "llm_score": 3,
+    "judge_raw": "3"
+  },
+  {
+    "id": 40,
+    "question": "Ai chịu trách nhiệm khi có lỗi?",
+    "prediction": "Theo ngữ cảnh, Khách Hàng (KH) chịu trách nhiệm cuối cùng với mọi hỏng hóc, thiệt hại của xe và thiệt hại với bên thứ ba do lỗi của mình. Nếu xảy ra tai nạn hoặc các vụ việc vi phạm pháp luật do lỗi của Khách Hàng, thì Khách Hàng phải chịu mọi trách nhiệm. Ngoài ra, Đơn Vị Kinh Doanh Vận Tải hoặc Tài Xế cũng chịu trách nhiệm bồi thường thiệt hại do lỗi của họ gây ra cho Người Dùng trong quá trình cung cấp Dịch Vụ.",
+    "ground_truth": "Bên vi phạm phải bồi thường.",
+    "accuracy": 1,
+    "overlap": 0.8333333333333334,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 41,
+    "question": "Khách có thể hủy chuyến không?",
+    "prediction": "Có, khách có thể hủy chuyến xe trên ứng dụng nếu chuyến xe chưa bắt đầu. Tại màn hình đặt xe, khách chỉ cần ấn vào nút “Hủy” để thao tác hủy chuyến. Nếu vì lý do khẩn cấp hoặc bất khả kháng cần hủy chuyến mà không thao tác được trên ứng dụng, khách vui lòng thông báo tới tài xế hoặc liên hệ tới Xanh SM để được hỗ trợ.",
+    "ground_truth": "Có thể nhưng có thể mất phí.",
+    "accuracy": 1,
+    "overlap": 0.4,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 42,
+    "question": "Hủy chuyến có mất phí không?",
+    "prediction": "Theo quy định, bạn không phải chịu phí hủy khi hủy đơn. Bạn chỉ cần liên hệ với Tổng đài để thực hiện việc hủy đơn.",
+    "ground_truth": "Có thể phải trả phí hủy.",
+    "accuracy": 0,
+    "overlap": 0.3333333333333333,
+    "llm_score": 1,
+    "judge_raw": "1"
+  },
+  {
+    "id": 43,
+    "question": "Tài xế có được giữ thông tin khách không?",
+    "prediction": "Tôi không có thông tin để trả lời câu hỏi này.",
+    "ground_truth": "Không được lưu hoặc tiết lộ.",
+    "accuracy": 0,
+    "overlap": 0.16666666666666666,
+    "llm_score": 3,
+    "judge_raw": "3"
+  },
+  {
+    "id": 44,
+    "question": "Có được tiết lộ thông tin khách không?",
+    "prediction": "Công ty sẽ không bán thông tin của Khách Hàng cho bất kỳ bên nào và chỉ chia sẻ thông tin với bên thứ ba trong các trường hợp đã được Khách Hàng đồng ý hoặc theo quy định của pháp luật. Do đó, việc tiết lộ thông tin khách hàng là rất hạn chế và phải tuân thủ các quy định bảo mật.",
+    "ground_truth": "Không được tiết lộ.",
+    "accuracy": 1,
+    "overlap": 0.75,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 45,
+    "question": "Khách có quyền kiện không?",
+    "prediction": "Có, khách hàng có quyền gửi khiếu nại nếu tài xế hoặc đơn vị kinh doanh vận tải vi phạm hợp đồng, điều kiện hoặc luật áp dụng. Nếu tranh chấp không được giải quyết bằng thương lượng, khách hàng có thể đưa tranh chấp ra tòa án có thẩm quyền để giải quyết.",
+    "ground_truth": "Có quyền khởi kiện.",
+    "accuracy": 1,
+    "overlap": 0.5,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 46,
+    "question": "Có thể tự bảo vệ quyền lợi không?",
+    "prediction": "Có, bạn có quyền tự bảo vệ thông tin và quyền lợi của mình theo quy định của pháp luật. Bạn có thể yêu cầu các tổ chức, cá nhân khác có liên quan bảo vệ thông tin của mình và thông báo kịp thời cho Công ty khi phát hiện thấy có sai sót, nhầm lẫn, rò rỉ về thông tin hoặc nghi ngờ thông tin của mình đang bị xâm phạm.",
+    "ground_truth": "Có quyền tự bảo vệ.",
+    "accuracy": 1,
+    "overlap": 0.8,
+    "llm_score": 5,
+    "judge_raw": "5"
+  },
+  {
+    "id": 47,
+    "question": "Có thể nhờ người khác khiếu nại không?",
+    "prediction": "Có, bạn có thể ủy quyền cho người khác khiếu nại trong trường hợp bạn ốm đau, già yếu, có nhược điểm về thể chất hoặc vì lý do khách quan khác mà không thể tự mình khiếu nại. Người được ủy quyền phải là cha, mẹ, vợ, chồng, con đã thành niên, anh, chị, em ruột hoặc người khác có năng lực hành vi dân sự đầy đủ. Việc ủy quyền phải được thực hiện bằng văn bản và có xác nhận của UBND xã, phường, thị trấn nơi bạn cư trú.",
+    "ground_truth": "Có thể ủy quyền bằng văn bản.",
+    "accuracy": 1,
+    "overlap": 0.8571428571428571,
+    "llm_score": 5,
+    "judge_raw": "5"
+  },
+  {
+    "id": 48,
+    "question": "Ai đại diện khiếu nại cho người yếu thế?",
+    "prediction": "Người đại diện khiếu nại cho người yếu thế có thể là cha, mẹ, vợ, chồng, con, anh, chị, em ruột có năng lực hành vi dân sự đầy đủ hoặc người giám hộ. Trong trường hợp người khiếu nại ốm đau, già yếu, có nhược điểm về thể chất hoặc vì lý do khách quan khác mà không thể tự mình khiếu nại, họ có thể ủy quyền cho cha, mẹ, vợ, chồng, con đã thành niên, anh, chị, em ruột hoặc người khác có năng lực hành vi dân sự đầy đủ để thực hiện việc khiếu nại. Việc ủy quyền phải được thực hiện bằng văn bản và có xác nhận của UBND xã, phường, thị trấn nơi người ủy quyền cư trú.",
+    "ground_truth": "Người thân hoặc giám hộ.",
+    "accuracy": 1,
+    "overlap": 0.8,
+    "llm_score": 5,
+    "judge_raw": "5"
+  },
+  {
+    "id": 49,
+    "question": "Có cần giấy xác nhận khi ủy quyền không?",
+    "prediction": "Có, việc ủy quyền phải được thực hiện bằng văn bản và phải có xác nhận của UBND xã, phường, thị trấn nơi người ủy quyền cư trú.",
+    "ground_truth": "Có, cần xác nhận của UBND.",
+    "accuracy": 1,
+    "overlap": 0.6666666666666666,
+    "llm_score": 4,
+    "judge_raw": "4"
+  },
+  {
+    "id": 50,
+    "question": "Chính sách có thể thay đổi không?",
+    "prediction": "Có, chính sách này có thể được Công Ty cập nhật, sửa đổi, bổ sung hoặc thay thế trong từng thời kỳ. Công Ty sẽ đăng tải những thay đổi này trên trang thông tin điện tử chính thức của Công Ty. Chủ Thể Dữ Liệu Cá Nhân có thể truy cập trang này thường xuyên để cập nhật những thay đổi gần nhất.",
+    "ground_truth": "Có thể cập nhật theo thời gian.",
+    "accuracy": 1,
+    "overlap": 0.7142857142857143,
+    "llm_score": 5,
+    "judge_raw": "5"
+  }
+]

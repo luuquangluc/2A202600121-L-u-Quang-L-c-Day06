@@ -1,0 +1,973 @@
+===== EVALUATION REPORT =====
+Time: 20260409_164401
+Total samples: 100
+
+----- METRICS -----
+Accuracy: 0.57
+Keyword Overlap: 0.41
+LLM Score: 3.34
+
+----- ERROR CASES -----
+
+---
+Q: Khách hàng có được cho người khác lái xe thuê không?
+Pred: Tôi không có thông tin để trả lời câu hỏi này.
+GT: Không, khách hàng không được cho thuê lại xe hoặc cho bất kỳ cá nhân nào điều khiển xe thuê.
+Overlap: 0.06 | LLM: 1
+
+---
+Q: Nếu khách hàng vi phạm quy định của XanhSM thì sẽ thế nào?
+Pred: Nếu khách hàng vi phạm quy định của Xanh SM, Xanh SM có quyền chặn hoặc từ chối quyền truy cập vào tài khoản sử dụng dịch vụ, và/hoặc chặn các tính năng tích hợp sẵn trong ứng dụng, mà không ảnh hưởng đến các quyền và chế tài khác của Xanh SM. Điều này có thể xảy ra khi Xanh SM nghi ngờ có hành vi vi phạm, trái pháp luật và/hoặc gian lận từ phía khách hàng.
+GT: Khách hàng phải chịu các chế tài được công bố trên nền tảng XanhSM.
+Overlap: 0.36 | LLM: 3
+
+---
+Q: Tiền phạt có thể được trừ vào đâu?
+Pred: Trong ngữ cảnh đã cung cấp, không có thông tin cụ thể về việc tiền phạt có thể được trừ vào đâu. Bạn có thể cần liên hệ với bộ phận hỗ trợ khách hàng để được giải đáp chi tiết hơn về vấn đề này.
+GT: Có thể được trừ vào tiền cọc hoặc các khoản tiền khách hàng được nhận.
+Overlap: 0.62 | LLM: 2
+
+---
+Q: Nếu gây thiệt hại cho bên thứ ba thì ai chịu?
+Pred: Trong trường hợp gây thiệt hại cho bên thứ ba, đối tác (người điều khiển phương tiện) sẽ phải chịu trách nhiệm trước pháp luật về việc bảo đảm an toàn cho phương tiện. Điều này có nghĩa là đối tác sẽ phải chịu trách nhiệm về các thiệt hại phát sinh từ hành vi của mình trong quá trình thực hiện chuyến xe.
+GT: Khách hàng phải chịu toàn bộ thiệt hại trực tiếp và gián tiếp.
+Overlap: 0.38 | LLM: 2
+
+---
+Q: Khách hàng có nghĩa vụ gì ngoài hợp đồng?
+Pred: Ngoài các nghĩa vụ quy định trong hợp đồng, Khách hàng còn có nghĩa vụ bồi hoàn cho GSM toàn bộ chi phí mà GSM đã trả thay Khách hàng, bao gồm cả tiền phạt vi phạm hành chính, và bồi thường thiệt hại (cả trực tiếp và gián tiếp) mà GSM hay bên thứ ba phải chịu do hành vi vi phạm của Khách hàng. Khách hàng cũng phải thanh toán các khoản phạt vi phạm của mình bằng cách bù trừ vào Tiền Cọc và/hoặc bất kỳ khoản tiền nào mà Khách hàng được nhận từ hoạt động kinh doanh vận tải trên nền tảng XANH SM.
+GT: Phải thực hiện các nghĩa vụ theo hợp đồng, chính sách dịch vụ và pháp luật.
+Overlap: 0.47 | LLM: 3
+
+---
+Q: GSM có quyền thu lại tiền từ khách hàng không?
+Pred: Có, GSM có quyền thu lại tiền từ khách hàng trong trường hợp khách hàng không thực hiện nghĩa vụ thanh toán theo hợp đồng, bao gồm cả việc không thanh toán tiền cọc hoặc các khoản phí khác. Nếu khách hàng chậm thanh toán, họ sẽ phải trả thêm lãi suất chậm thanh toán và GSM có quyền hạn chế hoặc khóa hệ thống để dừng hoạt động của xe và tiến tới việc chấm dứt hợp đồng.
+GT: Có, GSM có thể cấn trừ chi phí vào tiền cọc hoặc khoản thu của khách hàng.
+Overlap: 0.65 | LLM: 3
+
+---
+Q: Khách hàng có phải chịu trách nhiệm nếu tài xế vi phạm không?
+Pred: Theo ngữ cảnh đã cung cấp, khách hàng không phải chịu trách nhiệm nếu tài xế vi phạm. Tuy nhiên, khách hàng nên báo cáo hành vi vi phạm của tài xế cho Xanh SM thông qua "Trung tâm hỗ trợ" để được xử lý thích đáng.
+GT: Khách hàng phải đảm bảo tài xế tuân thủ quy định và không vi phạm.
+Overlap: 0.53 | LLM: 1
+
+---
+Q: Khách hàng có được vi phạm quy định tài xế không?
+Pred: Khách hàng cũng phải tuân thủ đầy đủ và đúng các quy định, tiêu chuẩn, chính sách, quy tắc đối với tài xế tham gia kinh doanh vận tải trên nền tảng XANH SM. Nếu khách hàng vi phạm quy định này, họ sẽ phải chịu các chế tài được công bố trên các nền tảng của XANH SM.
+GT: Không, phải đảm bảo tài xế cũng tuân thủ quy định.
+Overlap: 0.64 | LLM: 2
+
+---
+Q: Nếu bất khả kháng kéo dài hơn 60 ngày thì sao?
+Pred: Nếu sự kiện Bất Khả Kháng kéo dài hơn 60 ngày, bất kỳ Bên nào cũng có thể, bằng một thông báo bằng văn bản gửi Bên kia, đơn phương chấm dứt Hợp Đồng.
+GT: Bên nào cũng có quyền chấm dứt hợp đồng bằng văn bản.
+Overlap: 0.75 | LLM: 3
+
+---
+Q: Thông báo bất khả kháng có bắt buộc không?
+Pred: Có, thông báo bất khả kháng là bắt buộc. Bên bị ảnh hưởng bởi sự kiện bất khả kháng phải thông báo bằng văn bản cho bên kia trong vòng 03 ngày từ ngày xảy ra sự kiện, nêu chi tiết về sự kiện, các biện pháp đã tiến hành để phòng, khắc phục thiệt hại, và dự kiến kế hoạch khắc phục.
+GT: Có, phải thông báo ngay cho GSM.
+Overlap: 0.71 | LLM: 3
+
+---
+Q: Nếu không thông báo thì có được miễn trách nhiệm không?
+Pred: Theo ngữ cảnh, nếu KH không thông báo ngay cho đại diện GSM về việc tiết lộ thông tin truy cập dẫn đến việc sử dụng trái phép TKQL/TKUD, thì GSM sẽ được miễn trừ trách nhiệm. Do đó, KH sẽ không được miễn trách nhiệm nếu không thực hiện thông báo.
+GT: Không, phải đáp ứng đầy đủ điều kiện bao gồm thông báo.
+Overlap: 0.17 | LLM: 3
+
+---
+Q: Khách hàng có cần giảm thiểu thiệt hại không?
+Pred: Trong ngữ cảnh đã cung cấp, không có thông tin cụ thể về việc khách hàng có cần giảm thiểu thiệt hại hay không. Tuy nhiên, việc giữ bình tĩnh và phản ứng nhanh chóng trong các tình huống khẩn cấp có thể giúp giảm thiểu thiệt hại, bảo vệ sức khỏe và an toàn của khách hàng và người khác. Nếu bạn cần thông tin chi tiết hơn, tôi không có thông tin để trả lời.
+GT: Có, phải áp dụng mọi biện pháp cần thiết để giảm thiệt hại.
+Overlap: 0.31 | LLM: 2
+
+---
+Q: Thay đổi pháp luật có được coi là bất khả kháng không?
+Pred: Có, sự thay đổi của chính sách, pháp luật của nhà nước được coi là một sự kiện bất khả kháng theo quy định trong ngữ cảnh.
+GT: Có.
+Overlap: 0.00 | LLM: 3
+
+---
+Q: Sau khi chấm dứt hợp đồng, tiền cọc có được giữ không?
+Pred: Theo quy định tại mục 7.2.4 trong ngữ cảnh, GSM có quyền đơn phương chấm dứt hợp đồng mà không phải hoàn trả bất kỳ chi phí nào, bao gồm cả tiền cọc, nếu Khách Hàng vi phạm nghĩa vụ theo hợp đồng. Do đó, trong trường hợp hợp đồng bị chấm dứt do vi phạm, tiền cọc có thể không được hoàn lại. Tuy nhiên, nếu hợp đồng chấm dứt theo thỏa thuận của các bên hoặc không do vi phạm, thông tin về việc giữ hay hoàn trả tiền cọc không được nêu rõ trong ngữ cảnh.
+GT: Có, cho đến khi hoàn thành nghĩa vụ.
+Overlap: 0.25 | LLM: 2
+
+---
+Q: Thời hạn hoàn thành nghĩa vụ sau chấm dứt là bao lâu?
+Pred: Thời hạn hoàn thành nghĩa vụ sau khi chấm dứt Hợp Đồng là:
+
+- Tất toán các khoản nợ còn lại trong thời hạn 10 ngày kể từ ngày Hợp Đồng chấm dứt.
+- Giải quyết các đối soát, tra soát, khiếu nại có liên quan đến Dịch Vụ trong 30 ngày kể từ ngày Hợp Đồng chấm dứt. 
+
+Nếu Hợp Đồng bị chấm dứt theo quy định vi phạm, bên vi phạm sẽ phải bồi thường thiệt hại trong thời gian này.
+GT: Tối đa 30 ngày làm việc.
+Overlap: 0.33 | LLM: 2
+
+---
+Q: Sau thanh lý hợp đồng, khách hàng còn trách nhiệm không?
+Pred: Sau khi hợp đồng chấm dứt hay thanh lý, Khách Hàng vẫn chịu trách nhiệm về các nghĩa vụ với Nhà nước (nếu có) và các bên thứ ba phát sinh trong thời gian Khách Hàng vận hành xe. GSM sẽ thông báo với Khách Hàng bằng văn bản hoặc thư điện tử, và trong vòng 10 ngày kể từ khi nhận được thông báo này, Khách Hàng phải hoàn thành toàn bộ các nghĩa vụ theo thông báo.
+GT: Có, với nghĩa vụ phát sinh trước đó.
+Overlap: 0.62 | LLM: 2
+
+---
+Q: Tiền cọc phải nộp khi nào?
+Pred: Tiền cọc phải nộp cho GSM trong thời hạn quy định tại Hợp Đồng. Nếu tiền cọc bị cấn trừ, Khách Hàng phải nộp bổ sung trong thời hạn mà GSM thông báo.
+GT: Trong 10 ngày làm việc từ ngày ký hợp đồng.
+Overlap: 0.33 | LLM: 2
+
+---
+Q: Tiền cọc có được tính lãi không?
+Pred: Tiền cọc không được tính lãi trong suốt thời hạn hợp đồng và thời hạn giải quyết tranh chấp (nếu có).
+GT: Không.
+Overlap: 0.00 | LLM: 1
+
+---
+Q: Khi nào được hoàn tiền cọc?
+Pred: Tiền cọc sẽ được hoàn trả cho Khách Hàng trong vòng 30 ngày kể từ ngày Dịch Vụ bị ngừng cung cấp hoặc hoàn thành công nợ tồn đọng, tùy thời điểm nào đến sau. Tuy nhiên, trước khi hoàn trả, GSM sẽ trừ đi các khoản mà Khách Hàng phải trả cho GSM, bao gồm nhưng không giới hạn Phí Dịch Vụ, phạt vi phạm và các nghĩa vụ khác quy định tại Hợp đồng.
+GT: Trong 30 ngày sau khi hoàn tất công nợ.
+Overlap: 0.67 | LLM: 3
+
+---
+Q: Nếu tiền cọc không đủ thì sao?
+Pred: Nếu tiền cọc không đủ, Khách Hàng phải nộp bổ sung trong thời hạn mà GSM thông báo. Nếu Khách Hàng chậm nộp bổ sung, sẽ phải trả thêm lãi suất chậm thanh toán 0,05%/ngày/số tiền chậm nộp. Tiền cọc không được tính lãi và sẽ được hoàn trả cho Khách Hàng khi Hợp Đồng Dịch Vụ chấm dứt, sau khi cấn trừ các nghĩa vụ tài chính của Khách Hàng với GSM (nếu có).
+GT: Khách hàng phải thanh toán phần còn thiếu.
+Overlap: 0.62 | LLM: 3
+
+---
+Q: Phí cầu đường có nằm trong phí dịch vụ không?
+Pred: Phí cầu đường không nằm trong phí dịch vụ. Phí dịch vụ chỉ bao gồm thuế GTGT và phí nền tảng (nếu có), trong khi phí cầu đường, phà, bến bãi là các chi phí riêng và không tính vào phí dịch vụ khi tính chiết khấu.
+GT: Không, nhưng được đối soát cùng.
+Overlap: 0.00 | LLM: 2
+
+---
+Q: Khách hàng có thể xem chi tiết chuyến xe không?
+Pred: Trong ngữ cảnh hiện tại, không có thông tin cụ thể về việc khách hàng có thể xem chi tiết chuyến xe hay không. Tôi không có thông tin để trả lời câu hỏi này.
+GT: Có, qua TKQL.
+Overlap: 0.00 | LLM: 1
+
+---
+Q: Khách hàng có quyền yêu cầu sửa phí không?
+Pred: Trong ngữ cảnh đã cung cấp, không có thông tin cụ thể về việc Khách Hàng có quyền yêu cầu sửa phí hay không. Do đó, tôi không có thông tin để trả lời câu hỏi này.
+GT: Có.
+Overlap: 0.00 | LLM: 1
+
+---
+Q: Ai quyết định mức bồi thường?
+Pred: Mức bồi thường sẽ được xác định và xem xét theo các quy định tại Chính sách bồi thường của Xanh SM. Cụ thể, nếu hàng hóa bị mất, hư hỏng hoặc tráo đổi, mức bồi thường sẽ dựa trên giá trị hóa đơn hoặc thiệt hại thực tế, tùy thuộc vào từng trường hợp cụ thể. Nếu người dùng đã mua bảo hiểm hàng hóa, mức bồi thường cũng sẽ được xác định theo các quy định trong Chính sách Bảo hiểm.
+GT: GSM hoặc đơn vị sửa chữa.
+Overlap: 0.33 | LLM: 1
+
+---
+Q: Thời hạn thanh toán bồi thường là bao lâu?
+Pred: Thời hạn bồi thường là 30 (ba mươi) ngày kể từ ngày Các Bên lập văn bản xác định trách nhiệm bồi thường thiệt hại và Người dùng cung cấp đầy đủ Hóa đơn hợp pháp, chứng từ hợp lệ.
+GT: 10 ngày.
+Overlap: 0.00 | LLM: 1
+
+---
+Q: Có bồi thường thiệt hại gián tiếp không?
+Pred: Theo quy định, Xanh SM/Đối tác không bồi thường thiệt hại gián tiếp, thiệt hại ngoài hợp đồng hoặc các khoản lợi ích không thu được do việc cung cấp Sản Phẩm không đảm bảo.
+GT: Không.
+Overlap: 0.00 | LLM: 3
+
+---
+Q: Nếu vi phạm nhẹ có bị phạt không?
+Pred: Trong ngữ cảnh đã cung cấp, không có thông tin cụ thể về việc xử lý vi phạm nhẹ. Tuy nhiên, theo quy định chung, nếu một Bên không thực hiện, thực hiện không đầy đủ hoặc không đúng các nghĩa vụ theo Hợp Đồng, Bên vi phạm sẽ phải chịu phạt 8% giá trị phần nghĩa vụ bị vi phạm và bồi thường cho Bên còn lại mọi thiệt hại thực tế phát sinh. Do đó, nếu vi phạm nhẹ vẫn có thể bị phạt, nhưng mức độ và hình thức xử lý cụ thể có thể phụ thuộc vào quy định của Hợp Đồng và sự thỏa thuận giữa các Bên.
+GT: Có, nếu vi phạm nghĩa vụ.
+Overlap: 0.67 | LLM: 3
+
+---
+Q: Phạt tính theo giá trị nào?
+Pred: Phạt được tính theo giá trị phần nghĩa vụ hợp đồng bị vi phạm, với mức phạt là 8% giá trị đó.
+GT: Giá trị nghĩa vụ bị vi phạm.
+Overlap: 0.86 | LLM: 3
+
+---
+Q: Có được tiết lộ thông tin mật không?
+Pred: Theo quy định trong ngữ cảnh, Bên Nhận không được tiết lộ Thông Tin Mật cho bất kỳ bên thứ ba nào, dù là trực tiếp hay gián tiếp, trong bất kỳ tình huống nào, khi không có sự đồng ý bằng văn bản của Bên tiết lộ. Tuy nhiên, có một số trường hợp ngoại lệ mà nghĩa vụ bảo mật sẽ được loại trừ, như khi thông tin đã được phổ biến rộng rãi trong công chúng hoặc được yêu cầu tiết lộ bởi cơ quan có thẩm quyền.
+GT: Không, trừ khi có sự đồng ý.
+Overlap: 0.57 | LLM: 2
+
+---
+Q: Khi nào được phép tiết lộ thông tin?
+Pred: Thông tin chỉ được phép tiết lộ trong các trường hợp sau:
+
+1. Khi có sự đồng ý bằng văn bản của Bên tiết lộ.
+2. Nếu thông tin đã được phổ biến rộng rãi trong công chúng bởi Bên tiết lộ.
+3. Khi thông tin được cung cấp cho nhân viên, chuyên gia tư vấn tài chính, pháp lý hoặc nhà thầu của Bên Nhận để thực hiện Hợp Đồng, với điều kiện Bên Nhận phải đảm bảo các đối tượng này tuân thủ quy định bảo mật.
+4. Nếu thông tin được nhận từ một bên thứ ba không liên quan tới Hợp Đồng mà không chịu bất kỳ nghĩa vụ bảo mật nào.
+5. Khi có yêu cầu tiết lộ bởi cơ quan có thẩm quyền hoặc bất kỳ tòa án có thẩm quyền xét xử đối với Bên Nhận.
+
+Các trường hợp này được quy định trong Điều 8.2 của chính sách bảo mật thông tin.
+GT: Khi theo yêu cầu pháp luật hoặc đã công khai.
+Overlap: 0.70 | LLM: 3
+
+---
+Q: Có thể chia sẻ cho nhân viên không?
+Pred: Tuyệt đối không chia sẻ tài khoản cho người khác chạy chung. Nếu tài xế có hành vi chia sẻ tài khoản cho người khác, tài khoản sẽ bị khóa và bị ngừng hợp tác vĩnh viễn.
+GT: Có, nếu phục vụ hợp đồng và đảm bảo bảo mật.
+Overlap: 0.30 | LLM: 1
+
+---
+Q: Vi phạm bảo mật có hậu quả gì?
+Pred: Việc vi phạm nghĩa vụ bảo mật thông tin có thể gây ra những tổn hại không thể khôi phục được cho Bên tiết lộ. Do đó, Bên tiết lộ có quyền tìm kiếm các biện pháp để giảm nhẹ thiệt hại và buộc Bên Nhận bồi thường toàn bộ thiệt hại với mức không thấp hơn Giá trị Hợp Đồng.
+GT: Phải bồi thường thiệt hại lớn.
+Overlap: 0.67 | LLM: 3
+
+---
+Q: Thông tin công khai có phải bảo mật không?
+Pred: Thông tin công khai không được coi là Thông Tin Mật và do đó không cần phải bảo mật. Theo quy định, nghĩa vụ bảo mật sẽ được loại trừ nếu thông tin đã được phổ biến rộng rãi trong công chúng bởi Bên tiết lộ.
+GT: Không.
+Overlap: 0.00 | LLM: 3
+
+---
+Q: Có thể nhận thông tin từ bên thứ ba không?
+Pred: Có, Xanh SM có thể nhận thông tin từ bên thứ ba, nhưng chỉ trong các trường hợp cụ thể như khi bên thứ ba đó cung cấp thông tin mà không chịu bất kỳ nghĩa vụ bảo mật nào. Tuy nhiên, Xanh SM sẽ không tiết lộ dữ liệu cá nhân của bạn cho bên thứ ba trừ khi việc tiết lộ đó là cần thiết để xử lý yêu cầu của bạn và bạn đã đồng ý với các quy định về bảo mật và bảo vệ dữ liệu cá nhân của bên thứ ba.
+GT: Có, nếu không có nghĩa vụ bảo mật.
+Overlap: 0.75 | LLM: 3
+
+---
+Q: Có thể bị chấm dứt hợp đồng vì hối lộ không?
+Pred: Trong ngữ cảnh đã cung cấp, không có thông tin cụ thể về việc chấm dứt hợp đồng do hành vi hối lộ. Tuy nhiên, Điều 9.1 quy định rằng Khách Hàng không được thực hiện hoặc thông qua bên thứ ba thực hiện hành vi hối lộ đối với nhân sự của GSM. Nếu phát hiện hành vi này, Khách Hàng phải thông báo ngay. Điều này ngụ ý rằng hành vi hối lộ có thể dẫn đến các hậu quả nghiêm trọng, có thể bao gồm việc chấm dứt hợp đồng, nhưng không được nêu rõ trong văn bản. Do đó, tôi không có thông tin cụ thể để khẳng định chắc chắn về việc chấm dứt hợp đồng trong trường hợp này.
+GT: Có.
+Overlap: 0.00 | LLM: 3
+
+---
+Q: Có thể bị chuyển cơ quan điều tra không?
+Pred: Trong ngữ cảnh đã cung cấp, nếu máy chủ lưu trữ dữ liệu bị tấn công dẫn đến mất, lộ, lọt Dữ Liệu Cá Nhân, Công Ty sẽ có trách nhiệm thông báo vụ việc cho cơ quan chức năng để điều tra xử lý. Tuy nhiên, không có thông tin cụ thể về việc có thể bị chuyển cơ quan điều tra hay không. Nếu bạn cần thông tin chi tiết hơn, có thể liên hệ với cơ quan chức năng hoặc bộ phận hỗ trợ của Công Ty.
+GT: Có.
+Overlap: 0.00 | LLM: 2
+
+---
+Q: Có phải hoàn trả tiền đã nhận không?
+Pred: Trong ngữ cảnh đã cung cấp, không có thông tin cụ thể về việc hoàn trả tiền đã nhận. Nếu bạn đang hỏi về một trường hợp cụ thể, vui lòng cung cấp thêm chi tiết để tôi có thể hỗ trợ tốt hơn.
+GT: Có.
+Overlap: 0.00 | LLM: 1
+
+---
+Q: Có bị cấm tham gia thầu không?
+Pred: Có, nếu Khách Hàng (KH) vi phạm quy định, GSM có quyền cấm tham gia các gói thầu khác.
+GT: Có.
+Overlap: 0.00 | LLM: 3
+
+---
+Q: Có phải bồi thường thiệt hại không?
+Pred: Có, Người dùng phải bồi thường toàn bộ thiệt hại xảy ra cho Xanh SM, Đối tác và các Bên liên quan trong một số trường hợp nhất định, như khi thiệt hại xảy ra do lỗi của Người dùng, hàng hóa thuộc danh mục cấm hoặc hạn chế, hoặc hàng hóa không được đóng gói đúng quy cách dẫn đến hư hỏng.
+GT: Có.
+Overlap: 0.00 | LLM: 3
+
+---
+Q: Có miễn trừ trách nhiệm cho GSM không?
+Pred: Có, GSM được miễn trừ trách nhiệm trong một số trường hợp. Cụ thể, GSM sẽ không chịu trách nhiệm nếu Khách Hàng và/hoặc Người Sử Dụng tiết lộ thông tin truy cập dẫn đến việc người khác sử dụng trái phép tài khoản mà không thông báo ngay cho đại diện GSM để phong tỏa tài khoản. Nếu việc tiết lộ này dẫn đến phát sinh phí dịch vụ, Khách Hàng sẽ phải hoàn toàn chịu trách nhiệm và thanh toán số tiền cước vận tải phát sinh cho GSM.
+GT: Có.
+Overlap: 0.00 | LLM: 3
+
+---
+Q: Ai chịu trách nhiệm đóng gói hàng?
+Pred: Đối tác vận chuyển có trách nhiệm đảm bảo rằng hàng hóa đã được đóng gói đúng quy cách và đầy đủ trước khi giao hàng. Cụ thể, Đối tác phải cam đoan và bảo đảm rằng hàng hóa đã được xếp gọn, dán nhãn và đánh dấu đúng cách.
+GT: Người dùng.
+Overlap: 0.00 | LLM: 1
+
+---
+Q: Nếu thông tin sai thì ai chịu?
+Pred: Theo ngữ cảnh, nếu có sai sót trong quản lý người sử dụng (NSD), tài khoản quản lý (TKQL) và/hoặc tài khoản sử dụng dịch vụ (TKUD) bị chiếm đoạt bởi người khác do lỗi của khách hàng (KH) và/hoặc NSD, thì KH/NSD vẫn phải thanh toán đầy đủ phí dịch vụ cho các trường hợp sai sót này. Do đó, KH sẽ chịu trách nhiệm trong trường hợp thông tin sai do lỗi của mình.
+GT: Người dùng.
+Overlap: 0.50 | LLM: 1
+
+---
+Q: Nếu không có hóa đơn thì sao?
+Pred: Theo quy định, nếu không yêu cầu xuất hóa đơn trước khi chuyến đi kết thúc, Xanh SM sẽ không thể hỗ trợ xuất lại hóa đơn. Do đó, nếu bạn không có hóa đơn, rất tiếc nhưng sẽ không có cách nào để lấy lại hóa đơn cho chuyến đi đó.
+GT: Bồi thường 4 lần cước phí.
+Overlap: 0.00 | LLM: 1
+
+----- FULL RESULTS -----
+
+---
+[1] Khách hàng có được cho người khác lái xe thuê không?
+Pred: Tôi không có thông tin để trả lời câu hỏi này.
+GT: Không, khách hàng không được cho thuê lại xe hoặc cho bất kỳ cá nhân nào điều khiển xe thuê.
+Acc=0 | Overlap=0.06 | LLM=1
+
+---
+[2] Nếu khách hàng vi phạm quy định của XanhSM thì sẽ thế nào?
+Pred: Nếu khách hàng vi phạm quy định của Xanh SM, Xanh SM có quyền chặn hoặc từ chối quyền truy cập vào tài khoản sử dụng dịch vụ, và/hoặc chặn các tính năng tích hợp sẵn trong ứng dụng, mà không ảnh hưởng đến các quyền và chế tài khác của Xanh SM. Điều này có thể xảy ra khi Xanh SM nghi ngờ có hành vi vi phạm, trái pháp luật và/hoặc gian lận từ phía khách hàng.
+GT: Khách hàng phải chịu các chế tài được công bố trên nền tảng XanhSM.
+Acc=0 | Overlap=0.36 | LLM=3
+
+---
+[3] Khách hàng có phải bồi hoàn chi phí cho GSM không?
+Pred: Có, Khách Hàng phải bồi hoàn cho GSM toàn bộ chi phí (bao gồm cả tiền phạt vi phạm hành chính) mà GSM đã trả thay Khách Hàng và/hoặc bồi thường toàn bộ thiệt hại (cả trực tiếp và gián tiếp) mà GSM hay bên thứ ba phải chịu do hoặc liên quan đến hành vi vi phạm của Khách Hàng. Việc bồi hoàn này có thể được thực hiện bằng cách bù trừ vào Tiền Cọc và/hoặc bất kỳ khoản tiền nào mà Khách Hàng được nhận từ hoạt động kinh doanh vận tải trên nền tảng XANH SM.
+GT: Có, khách hàng phải bồi hoàn toàn bộ chi phí và thiệt hại do hành vi vi phạm gây ra.
+Acc=1 | Overlap=0.89 | LLM=4
+
+---
+[4] Tiền phạt có thể được trừ vào đâu?
+Pred: Trong ngữ cảnh đã cung cấp, không có thông tin cụ thể về việc tiền phạt có thể được trừ vào đâu. Bạn có thể cần liên hệ với bộ phận hỗ trợ khách hàng để được giải đáp chi tiết hơn về vấn đề này.
+GT: Có thể được trừ vào tiền cọc hoặc các khoản tiền khách hàng được nhận.
+Acc=0 | Overlap=0.62 | LLM=2
+
+---
+[5] Khách hàng có cần tuân thủ tiêu chuẩn dịch vụ không?
+Pred: Có, Khách hàng cần tuân thủ đầy đủ và đúng các quy định, tiêu chuẩn, chính sách, quy tắc đối với tài xế tham gia kinh doanh vận tải trên nền tảng XANH SM. Nếu Khách hàng vi phạm quy định này, Khách hàng sẽ phải chịu các chế tài được công bố trên các nền tảng của XANH SM.
+GT: Có, khách hàng phải tuân thủ đầy đủ tiêu chuẩn dịch vụ và quy tắc ứng xử của XanhSM.
+Acc=1 | Overlap=0.68 | LLM=4
+
+---
+[6] Nếu gây thiệt hại cho bên thứ ba thì ai chịu?
+Pred: Trong trường hợp gây thiệt hại cho bên thứ ba, đối tác (người điều khiển phương tiện) sẽ phải chịu trách nhiệm trước pháp luật về việc bảo đảm an toàn cho phương tiện. Điều này có nghĩa là đối tác sẽ phải chịu trách nhiệm về các thiệt hại phát sinh từ hành vi của mình trong quá trình thực hiện chuyến xe.
+GT: Khách hàng phải chịu toàn bộ thiệt hại trực tiếp và gián tiếp.
+Acc=0 | Overlap=0.38 | LLM=2
+
+---
+[7] Khách hàng có nghĩa vụ gì ngoài hợp đồng?
+Pred: Ngoài các nghĩa vụ quy định trong hợp đồng, Khách hàng còn có nghĩa vụ bồi hoàn cho GSM toàn bộ chi phí mà GSM đã trả thay Khách hàng, bao gồm cả tiền phạt vi phạm hành chính, và bồi thường thiệt hại (cả trực tiếp và gián tiếp) mà GSM hay bên thứ ba phải chịu do hành vi vi phạm của Khách hàng. Khách hàng cũng phải thanh toán các khoản phạt vi phạm của mình bằng cách bù trừ vào Tiền Cọc và/hoặc bất kỳ khoản tiền nào mà Khách hàng được nhận từ hoạt động kinh doanh vận tải trên nền tảng XANH SM.
+GT: Phải thực hiện các nghĩa vụ theo hợp đồng, chính sách dịch vụ và pháp luật.
+Acc=0 | Overlap=0.47 | LLM=3
+
+---
+[8] GSM có quyền thu lại tiền từ khách hàng không?
+Pred: Có, GSM có quyền thu lại tiền từ khách hàng trong trường hợp khách hàng không thực hiện nghĩa vụ thanh toán theo hợp đồng, bao gồm cả việc không thanh toán tiền cọc hoặc các khoản phí khác. Nếu khách hàng chậm thanh toán, họ sẽ phải trả thêm lãi suất chậm thanh toán và GSM có quyền hạn chế hoặc khóa hệ thống để dừng hoạt động của xe và tiến tới việc chấm dứt hợp đồng.
+GT: Có, GSM có thể cấn trừ chi phí vào tiền cọc hoặc khoản thu của khách hàng.
+Acc=0 | Overlap=0.65 | LLM=3
+
+---
+[9] Khách hàng có phải chịu trách nhiệm nếu tài xế vi phạm không?
+Pred: Theo ngữ cảnh đã cung cấp, khách hàng không phải chịu trách nhiệm nếu tài xế vi phạm. Tuy nhiên, khách hàng nên báo cáo hành vi vi phạm của tài xế cho Xanh SM thông qua "Trung tâm hỗ trợ" để được xử lý thích đáng.
+GT: Khách hàng phải đảm bảo tài xế tuân thủ quy định và không vi phạm.
+Acc=0 | Overlap=0.53 | LLM=1
+
+---
+[10] Quy tắc ứng xử được công bố ở đâu?
+Pred: Quy tắc ứng xử được công bố trên website https://www.xanhsm.com/ và ứng dụng XANH SM, ứng dụng tài xế XANH SM.
+GT: Trên website và ứng dụng XanhSM.
+Acc=1 | Overlap=0.83 | LLM=4
+
+---
+[11] Khách hàng có được vi phạm quy định tài xế không?
+Pred: Khách hàng cũng phải tuân thủ đầy đủ và đúng các quy định, tiêu chuẩn, chính sách, quy tắc đối với tài xế tham gia kinh doanh vận tải trên nền tảng XANH SM. Nếu khách hàng vi phạm quy định này, họ sẽ phải chịu các chế tài được công bố trên các nền tảng của XANH SM.
+GT: Không, phải đảm bảo tài xế cũng tuân thủ quy định.
+Acc=0 | Overlap=0.64 | LLM=2
+
+---
+[12] Sự kiện bất khả kháng bao gồm những gì?
+Pred: Sự kiện bất khả kháng bao gồm nhưng không hạn chế các sự kiện như: bão lụt, động đất, chiến tranh, hoả hoạn, thay đổi chính sách, pháp luật của Nhà nước, dịch bệnh hoặc các sự kiện khách quan khác.
+GT: Bao gồm thiên tai, chiến tranh, dịch bệnh, thay đổi chính sách và các sự kiện khách quan khác.
+Acc=1 | Overlap=0.74 | LLM=4
+
+---
+[13] Khách hàng có được miễn trách nhiệm khi xảy ra bất khả kháng không?
+Pred: Có, Khách hàng chỉ được miễn trách nhiệm khi xảy ra Sự Kiện Bất Khả Kháng nếu đáp ứng các điều kiện sau: Sự kiện đó hoàn toàn nằm ngoài sự kiểm soát hợp lý hoặc không do lỗi hoặc sơ suất của Khách Hàng; Khách Hàng đã áp dụng mọi biện pháp cần thiết và trong khả năng cho phép để đề phòng, khắc phục hoặc giảm bớt thiệt hại; và Khách Hàng phải thông báo ngay cho GSM biết về sự kiện này.
+GT: Có, nếu đáp ứng điều kiện về kiểm soát, phòng ngừa và thông báo.
+Acc=1 | Overlap=0.71 | LLM=5
+
+---
+[14] Điều kiện đầu tiên để được miễn trách nhiệm là gì?
+Pred: Điều kiện đầu tiên để được miễn trách nhiệm là sự kiện đó hoàn toàn nằm ngoài sự kiểm soát hợp lý hoặc không do lỗi hoặc sơ suất của Khách Hàng.
+GT: Sự kiện nằm ngoài kiểm soát và không do lỗi của khách hàng.
+Acc=1 | Overlap=0.92 | LLM=4
+
+---
+[15] Khách hàng phải làm gì khi có sự kiện bất khả kháng?
+Pred: Khi có sự kiện bất khả kháng, Khách Hàng phải thực hiện các bước sau:
+
+1. Đảm bảo rằng sự kiện đó hoàn toàn nằm ngoài sự kiểm soát hợp lý hoặc không do lỗi hoặc sơ suất của Khách Hàng.
+2. Áp dụng mọi biện pháp cần thiết và trong khả năng cho phép để đề phòng, khắc phục hoặc giảm bớt thiệt hại.
+3. Thông báo ngay cho GSM bằng văn bản về sự kiện bất khả kháng trong vòng 03 ngày từ ngày xảy ra sự kiện, nêu chi tiết về sự kiện, các biện pháp đã tiến hành để phòng, khắc phục thiệt hại, và dự kiến kế hoạch và biện pháp khắc phục.
+GT: Phải áp dụng biện pháp khắc phục và thông báo ngay cho GSM.
+Acc=1 | Overlap=0.92 | LLM=5
+
+---
+[16] Nếu bất khả kháng kéo dài hơn 60 ngày thì sao?
+Pred: Nếu sự kiện Bất Khả Kháng kéo dài hơn 60 ngày, bất kỳ Bên nào cũng có thể, bằng một thông báo bằng văn bản gửi Bên kia, đơn phương chấm dứt Hợp Đồng.
+GT: Bên nào cũng có quyền chấm dứt hợp đồng bằng văn bản.
+Acc=0 | Overlap=0.75 | LLM=3
+
+---
+[17] Thông báo bất khả kháng có bắt buộc không?
+Pred: Có, thông báo bất khả kháng là bắt buộc. Bên bị ảnh hưởng bởi sự kiện bất khả kháng phải thông báo bằng văn bản cho bên kia trong vòng 03 ngày từ ngày xảy ra sự kiện, nêu chi tiết về sự kiện, các biện pháp đã tiến hành để phòng, khắc phục thiệt hại, và dự kiến kế hoạch khắc phục.
+GT: Có, phải thông báo ngay cho GSM.
+Acc=0 | Overlap=0.71 | LLM=3
+
+---
+[18] Nếu không thông báo thì có được miễn trách nhiệm không?
+Pred: Theo ngữ cảnh, nếu KH không thông báo ngay cho đại diện GSM về việc tiết lộ thông tin truy cập dẫn đến việc sử dụng trái phép TKQL/TKUD, thì GSM sẽ được miễn trừ trách nhiệm. Do đó, KH sẽ không được miễn trách nhiệm nếu không thực hiện thông báo.
+GT: Không, phải đáp ứng đầy đủ điều kiện bao gồm thông báo.
+Acc=0 | Overlap=0.17 | LLM=3
+
+---
+[19] Khách hàng có cần giảm thiểu thiệt hại không?
+Pred: Trong ngữ cảnh đã cung cấp, không có thông tin cụ thể về việc khách hàng có cần giảm thiểu thiệt hại hay không. Tuy nhiên, việc giữ bình tĩnh và phản ứng nhanh chóng trong các tình huống khẩn cấp có thể giúp giảm thiểu thiệt hại, bảo vệ sức khỏe và an toàn của khách hàng và người khác. Nếu bạn cần thông tin chi tiết hơn, tôi không có thông tin để trả lời.
+GT: Có, phải áp dụng mọi biện pháp cần thiết để giảm thiệt hại.
+Acc=0 | Overlap=0.31 | LLM=2
+
+---
+[20] Dịch bệnh có được coi là bất khả kháng không?
+Pred: Có, dịch bệnh được coi là một sự kiện bất khả kháng theo quy định trong ngữ cảnh đã cung cấp.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=4
+
+---
+[21] Chiến tranh có được coi là bất khả kháng không?
+Pred: Có, chiến tranh được coi là một sự kiện bất khả kháng theo quy định trong ngữ cảnh đã cung cấp.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=4
+
+---
+[22] Thay đổi pháp luật có được coi là bất khả kháng không?
+Pred: Có, sự thay đổi của chính sách, pháp luật của nhà nước được coi là một sự kiện bất khả kháng theo quy định trong ngữ cảnh.
+GT: Có.
+Acc=0 | Overlap=0.00 | LLM=3
+
+---
+[23] Hợp đồng có thể sửa đổi khi nào?
+Pred: Hợp đồng chỉ có thể bị sửa đổi hoặc hủy bỏ theo thỏa thuận của các bên hoặc theo quy định của pháp luật.
+GT: Khi có thỏa thuận giữa các bên hoặc theo pháp luật.
+Acc=1 | Overlap=0.82 | LLM=4
+
+---
+[24] Hợp đồng chấm dứt khi nào?
+Pred: Hợp đồng chấm dứt khi xảy ra một trong các trường hợp sau:
+
+1. Một Bên có văn bản thông báo chấm dứt cho Bên kia trước ít nhất 30 ngày trước ngày dự kiến chấm dứt.
+2. Các Bên đồng ý chấm dứt Hợp Đồng bằng văn bản.
+3. Hợp Đồng chấm dứt theo thỏa thuận của Các Bên.
+4. Một Bên có quyền đơn phương chấm dứt Hợp Đồng ngay lập tức nếu Bên còn lại vi phạm nghĩa vụ Hợp Đồng và không sửa chữa, khắc phục được trong thời hạn 10 ngày từ ngày nhận được thông báo của Bên bị vi phạm.
+5. Các trường hợp khác theo quy định pháp luật.
+GT: Khi hết hạn, có thông báo, thỏa thuận hoặc vi phạm.
+Acc=1 | Overlap=0.64 | LLM=4
+
+---
+[25] Khách hàng muốn chấm dứt hợp đồng cần làm gì?
+Pred: Khách hàng muốn chấm dứt hợp đồng cần thực hiện các bước sau:
+
+1. Gửi thông báo bằng văn bản hoặc email cho bên còn lại (GSM) trước ít nhất 30 ngày trước ngày dự kiến chấm dứt hợp đồng.
+2. Thanh toán toàn bộ tiền thuê và các chi phí liên quan của tháng sử dụng dịch vụ đến thời điểm GSM ký nhận bàn giao xe.
+3. Bồi thường cho GSM một khoản tiền được quy định tại CSDV.
+
+Nếu không thực hiện đúng các bước này, việc chấm dứt hợp đồng có thể không được chấp nhận.
+GT: Phải thông báo trước 30 ngày và thanh toán đầy đủ chi phí.
+Acc=1 | Overlap=0.69 | LLM=5
+
+---
+[26] GSM có thể chấm dứt hợp đồng ngay không?
+Pred: Có, GSM có quyền đơn phương chấm dứt hợp đồng ngay lập tức mà không phải chịu phạt, bồi thường thiệt hại hoặc hoàn trả bất kỳ chi phí nào, trong các trường hợp như Khách Hàng vi phạm nghĩa vụ thanh toán, vi phạm các nghĩa vụ khác mà không khắc phục trong vòng 03 ngày làm việc, chậm bổ sung Tiền Cọc quá 10 ngày, hoặc sử dụng xe vào mục đích không được nêu trong hợp đồng.
+GT: Có, nếu khách hàng vi phạm nghĩa vụ.
+Acc=1 | Overlap=0.75 | LLM=4
+
+---
+[27] Vi phạm thanh toán có bị chấm dứt hợp đồng không?
+Pred: Có, nếu Khách Hàng vi phạm nghĩa vụ thanh toán theo Hợp Đồng, GSM có quyền đơn phương chấm dứt Hợp Đồng ngay lập tức mà không phải chịu phạt, bồi thường thiệt hại hoặc hoàn trả bất kỳ chi phí nào. Đồng thời, GSM cũng có quyền yêu cầu Khách Hàng bồi thường mọi thiệt hại gây ra cho GSM.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=4
+
+---
+[28] Sau khi chấm dứt hợp đồng, tiền cọc có được giữ không?
+Pred: Theo quy định tại mục 7.2.4 trong ngữ cảnh, GSM có quyền đơn phương chấm dứt hợp đồng mà không phải hoàn trả bất kỳ chi phí nào, bao gồm cả tiền cọc, nếu Khách Hàng vi phạm nghĩa vụ theo hợp đồng. Do đó, trong trường hợp hợp đồng bị chấm dứt do vi phạm, tiền cọc có thể không được hoàn lại. Tuy nhiên, nếu hợp đồng chấm dứt theo thỏa thuận của các bên hoặc không do vi phạm, thông tin về việc giữ hay hoàn trả tiền cọc không được nêu rõ trong ngữ cảnh.
+GT: Có, cho đến khi hoàn thành nghĩa vụ.
+Acc=0 | Overlap=0.25 | LLM=2
+
+---
+[29] Thời hạn hoàn thành nghĩa vụ sau chấm dứt là bao lâu?
+Pred: Thời hạn hoàn thành nghĩa vụ sau khi chấm dứt Hợp Đồng là:
+
+- Tất toán các khoản nợ còn lại trong thời hạn 10 ngày kể từ ngày Hợp Đồng chấm dứt.
+- Giải quyết các đối soát, tra soát, khiếu nại có liên quan đến Dịch Vụ trong 30 ngày kể từ ngày Hợp Đồng chấm dứt. 
+
+Nếu Hợp Đồng bị chấm dứt theo quy định vi phạm, bên vi phạm sẽ phải bồi thường thiệt hại trong thời gian này.
+GT: Tối đa 30 ngày làm việc.
+Acc=0 | Overlap=0.33 | LLM=2
+
+---
+[30] Nếu không hoàn thành nghĩa vụ thì sao?
+Pred: Nếu bạn không hoàn thành hoặc thực hiện không đầy đủ nghĩa vụ/trách nhiệm theo hợp đồng trong thời hạn quy định, GSM sẽ thay mặt bạn thực hiện và có quyền cấn trừ các chi phí thực hiện vào Tiền Cọc.
+GT: GSM có thể thực hiện thay và trừ vào tiền cọc.
+Acc=1 | Overlap=0.91 | LLM=4
+
+---
+[31] Hợp đồng có tự động gia hạn không?
+Pred: Có, hợp đồng sẽ tự động gia hạn thêm 12 tháng và không bị giới hạn số lần tự gia hạn nếu không bên nào có văn bản thông báo từ chối gia hạn hợp đồng trong thời hạn 20 ngày trước ngày cuối cùng của mỗi thời hạn.
+GT: Có, thêm 12 tháng nếu không có thông báo.
+Acc=1 | Overlap=0.89 | LLM=4
+
+---
+[32] Sau thanh lý hợp đồng, khách hàng còn trách nhiệm không?
+Pred: Sau khi hợp đồng chấm dứt hay thanh lý, Khách Hàng vẫn chịu trách nhiệm về các nghĩa vụ với Nhà nước (nếu có) và các bên thứ ba phát sinh trong thời gian Khách Hàng vận hành xe. GSM sẽ thông báo với Khách Hàng bằng văn bản hoặc thư điện tử, và trong vòng 10 ngày kể từ khi nhận được thông báo này, Khách Hàng phải hoàn thành toàn bộ các nghĩa vụ theo thông báo.
+GT: Có, với nghĩa vụ phát sinh trước đó.
+Acc=0 | Overlap=0.62 | LLM=2
+
+---
+[33] Thông báo nghĩa vụ sau hợp đồng trong bao lâu?
+Pred: GSM sẽ thông báo với Khách Hàng bằng văn bản hoặc thư điện tử và trong vòng 10 ngày kể từ khi nhận được thông báo chấm dứt hợp đồng. Khách Hàng phải hoàn thành toàn bộ các nghĩa vụ theo thông báo trong thời gian tối đa 30 ngày làm việc kể từ ngày bàn giao lại xe cho GSM.
+GT: 10 ngày kể từ khi nhận thông báo.
+Acc=1 | Overlap=0.88 | LLM=4
+
+---
+[34] Tiền cọc phải nộp khi nào?
+Pred: Tiền cọc phải nộp cho GSM trong thời hạn quy định tại Hợp Đồng. Nếu tiền cọc bị cấn trừ, Khách Hàng phải nộp bổ sung trong thời hạn mà GSM thông báo.
+GT: Trong 10 ngày làm việc từ ngày ký hợp đồng.
+Acc=0 | Overlap=0.33 | LLM=2
+
+---
+[35] Tiền cọc có được tính lãi không?
+Pred: Tiền cọc không được tính lãi trong suốt thời hạn hợp đồng và thời hạn giải quyết tranh chấp (nếu có).
+GT: Không.
+Acc=0 | Overlap=0.00 | LLM=1
+
+---
+[36] Khi nào được hoàn tiền cọc?
+Pred: Tiền cọc sẽ được hoàn trả cho Khách Hàng trong vòng 30 ngày kể từ ngày Dịch Vụ bị ngừng cung cấp hoặc hoàn thành công nợ tồn đọng, tùy thời điểm nào đến sau. Tuy nhiên, trước khi hoàn trả, GSM sẽ trừ đi các khoản mà Khách Hàng phải trả cho GSM, bao gồm nhưng không giới hạn Phí Dịch Vụ, phạt vi phạm và các nghĩa vụ khác quy định tại Hợp đồng.
+GT: Trong 30 ngày sau khi hoàn tất công nợ.
+Acc=0 | Overlap=0.67 | LLM=3
+
+---
+[37] Nếu tiền cọc không đủ thì sao?
+Pred: Nếu tiền cọc không đủ, Khách Hàng phải nộp bổ sung trong thời hạn mà GSM thông báo. Nếu Khách Hàng chậm nộp bổ sung, sẽ phải trả thêm lãi suất chậm thanh toán 0,05%/ngày/số tiền chậm nộp. Tiền cọc không được tính lãi và sẽ được hoàn trả cho Khách Hàng khi Hợp Đồng Dịch Vụ chấm dứt, sau khi cấn trừ các nghĩa vụ tài chính của Khách Hàng với GSM (nếu có).
+GT: Khách hàng phải thanh toán phần còn thiếu.
+Acc=0 | Overlap=0.62 | LLM=3
+
+---
+[38] Phí dịch vụ có bao gồm VAT không?
+Pred: Phí dịch vụ đã bao gồm thuế GTGT (VAT) theo quy định pháp luật.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=4
+
+---
+[39] Phí cầu đường có nằm trong phí dịch vụ không?
+Pred: Phí cầu đường không nằm trong phí dịch vụ. Phí dịch vụ chỉ bao gồm thuế GTGT và phí nền tảng (nếu có), trong khi phí cầu đường, phà, bến bãi là các chi phí riêng và không tính vào phí dịch vụ khi tính chiết khấu.
+GT: Không, nhưng được đối soát cùng.
+Acc=0 | Overlap=0.00 | LLM=2
+
+---
+[40] GSM có thể tạm ngừng dịch vụ khi nào?
+Pred: GSM có quyền tạm ngừng cung cấp dịch vụ nếu Phí Dịch Vụ và các khoản phụ phí (nếu có) phát sinh trong Kỳ Đối Soát của Khách Hàng vượt Hạn Mức được nêu tại Hợp Đồng. Trong trường hợp này, Khách Hàng phải thanh toán toàn bộ công nợ phát sinh cho GSM hoặc gửi đề nghị tăng Hạn Mức cho Kỳ Đối Soát đó bằng văn bản để tiếp tục sử dụng dịch vụ.
+GT: Khi vượt hạn mức công nợ.
+Acc=1 | Overlap=0.67 | LLM=4
+
+---
+[41] Thời gian thanh toán hóa đơn là bao lâu?
+Pred: Khách hàng phải thanh toán bằng chuyển khoản cho GSM Phí Dịch Vụ và các chi phí khác theo hóa đơn GTGT do GSM xuất trong 05 ngày làm việc từ khi Khách hàng nhận được hóa đơn của GSM nhưng không muộn hơn ngày 15 hàng tháng.
+GT: 5 ngày làm việc hoặc trước ngày 15 hàng tháng.
+Acc=1 | Overlap=0.67 | LLM=4
+
+---
+[42] Lãi chậm trả là bao nhiêu?
+Pred: Lãi chậm trả là 0,05% trên số tiền phải trả cho mỗi ngày chậm trả. Cụ thể, công thức tính lãi chậm trả là:
+
+Số tiền lãi chậm trả = Số tiền phải trả x 0,05% x Số ngày chậm trả.
+
+Trong đó:
+- Số tiền phải trả là tổng phí dịch vụ và các chi phí phát sinh theo hóa đơn do GSM phát hành trừ tiền đặt cọc (nếu có).
+- Số ngày chậm trả là số ngày tính từ ngày đến hạn thanh toán đến ngày khách hàng thanh toán thực tế cho GSM.
+GT: 0,05% mỗi ngày.
+Acc=1 | Overlap=0.67 | LLM=5
+
+---
+[43] Khách hàng có thể xem chi tiết chuyến xe không?
+Pred: Trong ngữ cảnh hiện tại, không có thông tin cụ thể về việc khách hàng có thể xem chi tiết chuyến xe hay không. Tôi không có thông tin để trả lời câu hỏi này.
+GT: Có, qua TKQL.
+Acc=0 | Overlap=0.00 | LLM=1
+
+---
+[44] Nếu không phản hồi đối soát thì sao?
+Pred: Nếu KH không phản hồi về Bảng Tổng Hợp Phí trong thời hạn quy định, thì được xem là KH đã đồng ý với Bảng Tổng Hợp Phí của GSM. Trong trường hợp này, GSM sẽ xuất hóa đơn GTGT cho KH.
+GT: Được xem là đồng ý.
+Acc=1 | Overlap=0.80 | LLM=5
+
+---
+[45] GSM có trách nhiệm gì với tài xế?
+Pred: GSM có các trách nhiệm sau đối với tài xế:
+
+1. Cung cấp Dịch Vụ cho khách hàng theo đúng Hợp Đồng, Điều Khoản Sử Dụng (ĐKSD) và pháp luật.
+2. Đảm bảo tài xế có Giấy phép lái xe phù hợp với phương tiện, còn giá trị sử dụng, có thái độ phục vụ chuyên nghiệp, lịch sự, tuân thủ thời giờ, lịch trình theo yêu cầu của khách hàng, và tuân thủ luật giao thông đường bộ.
+3. Phải mua bảo hiểm bắt buộc theo quy định pháp luật. Khách hàng sẽ không chịu bất kỳ trách nhiệm gì nếu phương tiện (hoặc phần phụ kiện bất kỳ của phương tiện) bị mất.
+4. GSM/Tài xế sẽ chịu trách nhiệm cho thiệt hại mà người sử dụng (NSD) gặp phải trong chuyến xe do lỗi của GSM. 
+
+Những trách nhiệm này nhằm đảm bảo quyền lợi và sự an toàn cho tài xế cũng như khách hàng.
+GT: Đảm bảo tài xế có bằng lái hợp lệ và phục vụ chuyên nghiệp.
+Acc=1 | Overlap=0.79 | LLM=4
+
+---
+[46] GSM có phải mua bảo hiểm không?
+Pred: Có, GSM có trách nhiệm mua bảo hiểm trách nhiệm dân sự bắt buộc của chủ xe cơ giới, và các bảo hiểm khác theo yêu cầu quản lý của GSM.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=4
+
+---
+[47] Khách hàng có chịu trách nhiệm nếu xe bị mất không?
+Pred: Theo ngữ cảnh đã cung cấp, khách hàng sẽ chịu trách nhiệm cuối cùng với mọi hỏng hóc, thiệt hại của xe và thiệt hại với bên thứ ba do lỗi của khách hàng. Tuy nhiên, không có thông tin cụ thể về việc khách hàng có chịu trách nhiệm nếu xe bị mất hay không. Do đó, tôi không có thông tin để trả lời câu hỏi này.
+GT: Không.
+Acc=1 | Overlap=1.00 | LLM=2
+
+---
+[48] Ai chịu trách nhiệm nếu khách bị thiệt hại do lỗi GSM?
+Pred: Trong ngữ cảnh được cung cấp, không có thông tin cụ thể về trách nhiệm của GSM trong trường hợp khách hàng bị thiệt hại do lỗi của GSM. Do đó, tôi không có thông tin để trả lời câu hỏi này.
+GT: GSM.
+Acc=1 | Overlap=1.00 | LLM=1
+
+---
+[49] Khách hàng có quyền yêu cầu sửa phí không?
+Pred: Trong ngữ cảnh đã cung cấp, không có thông tin cụ thể về việc Khách Hàng có quyền yêu cầu sửa phí hay không. Do đó, tôi không có thông tin để trả lời câu hỏi này.
+GT: Có.
+Acc=0 | Overlap=0.00 | LLM=1
+
+---
+[50] Khách hàng phải làm gì nếu gây hư hỏng xe?
+Pred: Nếu khách hàng gây hư hỏng xe, theo quy định, khách hàng phải chịu trách nhiệm cuối cùng với mọi hỏng hóc, thiệt hại của xe và thiệt hại với bên thứ ba do lỗi của mình. Khách hàng cần thông báo ngay cho Xanh SM về sự cố và thực hiện các biện pháp cần thiết theo hướng dẫn của công ty.
+GT: Phải bồi thường.
+Acc=1 | Overlap=0.33 | LLM=4
+
+---
+[51] Ai quyết định mức bồi thường?
+Pred: Mức bồi thường sẽ được xác định và xem xét theo các quy định tại Chính sách bồi thường của Xanh SM. Cụ thể, nếu hàng hóa bị mất, hư hỏng hoặc tráo đổi, mức bồi thường sẽ dựa trên giá trị hóa đơn hoặc thiệt hại thực tế, tùy thuộc vào từng trường hợp cụ thể. Nếu người dùng đã mua bảo hiểm hàng hóa, mức bồi thường cũng sẽ được xác định theo các quy định trong Chính sách Bảo hiểm.
+GT: GSM hoặc đơn vị sửa chữa.
+Acc=0 | Overlap=0.33 | LLM=1
+
+---
+[52] Khách hàng có nghĩa vụ thanh toán không?
+Pred: Có, Khách hàng có nghĩa vụ thanh toán các loại phí theo Hợp Đồng, bao gồm nhưng không giới hạn các nghĩa vụ thanh toán phí bảo trì, bảo dưỡng định kỳ, phí sạc pin và các loại phí khác thuộc nghĩa vụ của Khách hàng. Nếu Khách hàng không thực hiện hoặc thực hiện không đầy đủ nghĩa vụ thanh toán trong thời hạn quy định, GSM có quyền cấn trừ các chi phí thực hiện vào Tiền Cọc.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=5
+
+---
+[53] Tài xế có cần tuân thủ luật giao thông không?
+Pred: Có, tài xế cần tuân thủ luật giao thông đường bộ theo quy định. Điều này được nêu rõ trong quyền của người dùng, yêu cầu Đơn Vị Kinh Doanh Vận Tải và Tài Xế phải tuân thủ Điều Kiện, Luật Áp Dụng, bao gồm cả luật giao thông đường bộ.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=4
+
+---
+[54] GSM có phải cung cấp dịch vụ đúng hợp đồng không?
+Pred: Có, GSM phải cung cấp dịch vụ cho Khách Hàng theo đúng Hợp Đồng, Điều Khoản Sử Dụng (ĐKSD) và pháp luật.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=4
+
+---
+[55] Khách có quyền kiểm tra hóa đơn không?
+Pred: Có, khách có quyền kiểm tra hóa đơn. Hóa đơn sẽ được gửi qua email mà khách đã đăng ký khi tạo yêu cầu. Khách nên kiểm tra hòm thư chính, quảng cáo và thư rác để không bỏ sót. Đối với các chuyến đặt qua ứng dụng, khách cũng có thể xem lại hóa đơn tại mục Hoạt động > Chuyến đi tương ứng > Xuất hóa đơn.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=5
+
+---
+[56] Mức phạt vi phạm hợp đồng là bao nhiêu?
+Pred: Mức phạt vi phạm hợp đồng là 8% giá trị phần nghĩa vụ hợp đồng bị vi phạm.
+GT: 8% giá trị nghĩa vụ vi phạm.
+Acc=1 | Overlap=1.00 | LLM=4
+
+---
+[57] Có phải bồi thường ngoài phạt không?
+Pred: Có, theo quy định, bên vi phạm phải chịu phạt 8% giá trị phần nghĩa vụ hợp đồng bị vi phạm và đồng thời bồi thường cho bên còn lại mọi thiệt hại thực tế trực tiếp phát sinh do hành vi vi phạm gây ra. Như vậy, bồi thường là một trách nhiệm riêng biệt ngoài việc bị phạt.
+GT: Có, bồi thường thiệt hại thực tế.
+Acc=1 | Overlap=0.86 | LLM=4
+
+---
+[58] Thời hạn thanh toán bồi thường là bao lâu?
+Pred: Thời hạn bồi thường là 30 (ba mươi) ngày kể từ ngày Các Bên lập văn bản xác định trách nhiệm bồi thường thiệt hại và Người dùng cung cấp đầy đủ Hóa đơn hợp pháp, chứng từ hợp lệ.
+GT: 10 ngày.
+Acc=0 | Overlap=0.00 | LLM=1
+
+---
+[59] Có áp dụng phạt khi bất khả kháng không?
+Pred: Theo thông tin trong ngữ cảnh, nếu Khách Hàng bị ảnh hưởng bởi Sự Kiện Bất Khả Kháng và đáp ứng các điều kiện quy định, thì Khách Hàng chỉ được miễn trách nhiệm. Điều này có nghĩa là không áp dụng phạt trong trường hợp bất khả kháng nếu các điều kiện được đáp ứng.
+GT: Không.
+Acc=1 | Overlap=0.00 | LLM=4
+
+---
+[60] Thiệt hại nào được bồi thường?
+Pred: Thiệt hại được bồi thường bao gồm:
+
+1. Thiệt hại xảy ra trực tiếp do lỗi của Người dùng.
+2. Hàng hóa bị mất, hư hỏng hoặc tráo đổi toàn bộ.
+3. Hàng hóa bị mất, hư hỏng hoặc tráo đổi một phần, với mức bồi thường xác định trên cơ sở thiệt hại thực tế.
+
+Ngoài ra, nếu Người dùng cung cấp được Hóa đơn hợp pháp thể hiện Giá trị Hàng hóa bị thất thoát hoặc hư hỏng, Xanh SM/Đối tác sẽ bồi thường phần Giá trị Hàng hóa đó.
+GT: Thiệt hại trực tiếp.
+Acc=1 | Overlap=0.75 | LLM=4
+
+---
+[61] Có bồi thường thiệt hại gián tiếp không?
+Pred: Theo quy định, Xanh SM/Đối tác không bồi thường thiệt hại gián tiếp, thiệt hại ngoài hợp đồng hoặc các khoản lợi ích không thu được do việc cung cấp Sản Phẩm không đảm bảo.
+GT: Không.
+Acc=0 | Overlap=0.00 | LLM=3
+
+---
+[62] Phạt áp dụng khi nào?
+Pred: Phạt sẽ được áp dụng trong trường hợp một Bên vi phạm nghĩa vụ Hợp Đồng và không sửa chữa, khắc phục được trong thời hạn 10 ngày từ ngày nhận được thông báo của Bên bị vi phạm. Cụ thể, Bên vi phạm sẽ phải bồi thường mọi thiệt hại thực tế, trực tiếp mà bên kia phải chịu, đồng thời chịu phạt vi phạm 8% giá trị nghĩa vụ bị vi phạm.
+GT: Khi vi phạm nghĩa vụ hợp đồng.
+Acc=1 | Overlap=0.71 | LLM=4
+
+---
+[63] Có cần chứng minh thiệt hại không?
+Pred: Có, bạn cần cung cấp bằng chứng chứng minh thiệt hại, ví dụ như video hoặc hình ảnh quá trình đóng gói liền mạch thể hiện được loại hàng hóa, số lượng, khối lượng hàng hóa mà bạn đã bàn giao cho đối tác. Nếu không có chứng từ xác nhận việc chấp nhận hàng hóa hoặc chứng từ chứng minh việc sử dụng sản phẩm, bạn sẽ không được bồi thường.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=4
+
+---
+[64] Nếu vi phạm nhẹ có bị phạt không?
+Pred: Trong ngữ cảnh đã cung cấp, không có thông tin cụ thể về việc xử lý vi phạm nhẹ. Tuy nhiên, theo quy định chung, nếu một Bên không thực hiện, thực hiện không đầy đủ hoặc không đúng các nghĩa vụ theo Hợp Đồng, Bên vi phạm sẽ phải chịu phạt 8% giá trị phần nghĩa vụ bị vi phạm và bồi thường cho Bên còn lại mọi thiệt hại thực tế phát sinh. Do đó, nếu vi phạm nhẹ vẫn có thể bị phạt, nhưng mức độ và hình thức xử lý cụ thể có thể phụ thuộc vào quy định của Hợp Đồng và sự thỏa thuận giữa các Bên.
+GT: Có, nếu vi phạm nghĩa vụ.
+Acc=0 | Overlap=0.67 | LLM=3
+
+---
+[65] Có thể vừa phạt vừa bồi thường không?
+Pred: Có, theo quy định trong hợp đồng, bên vi phạm sẽ phải chịu phạt 8% giá trị phần nghĩa vụ hợp đồng bị vi phạm và đồng thời bồi thường cho bên còn lại mọi thiệt hại thực tế trực tiếp phát sinh do hành vi vi phạm gây ra. Do đó, việc vừa phạt vừa bồi thường là hoàn toàn có thể.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=5
+
+---
+[66] Phạt tính theo giá trị nào?
+Pred: Phạt được tính theo giá trị phần nghĩa vụ hợp đồng bị vi phạm, với mức phạt là 8% giá trị đó.
+GT: Giá trị nghĩa vụ bị vi phạm.
+Acc=0 | Overlap=0.86 | LLM=3
+
+---
+[67] Thông tin mật bao gồm những gì?
+Pred: Thông tin mật bao gồm các thông tin như sau:
+
+1. Các điều khoản của Hợp Đồng.
+2. Các thông tin, dữ liệu, văn bản được tạo ra liên quan đến hoặc phát sinh từ việc thực hiện Hợp Đồng.
+3. Bí mật kinh doanh, bí mật công nghệ, bí quyết thương mại, kiến thức hoặc các thông tin khác về hoặc phục vụ cho tiếp thị tài chính, kinh doanh của Bên tiết lộ.
+4. Các thông tin, dữ liệu, văn bản được Bên tiết lộ cung cấp cho Bên Nhận theo bất kỳ hình thức nào để thực hiện Hợp Đồng. 
+
+Bên Nhận phải tuyệt đối bảo mật các thông tin này và không được tiết lộ cho bất kỳ bên thứ ba nào khi không có sự đồng ý bằng văn bản của Bên tiết lộ.
+GT: Bao gồm dữ liệu, hợp đồng, bí mật kinh doanh và thông tin liên quan.
+Acc=1 | Overlap=0.87 | LLM=5
+
+---
+[68] Có được tiết lộ thông tin mật không?
+Pred: Theo quy định trong ngữ cảnh, Bên Nhận không được tiết lộ Thông Tin Mật cho bất kỳ bên thứ ba nào, dù là trực tiếp hay gián tiếp, trong bất kỳ tình huống nào, khi không có sự đồng ý bằng văn bản của Bên tiết lộ. Tuy nhiên, có một số trường hợp ngoại lệ mà nghĩa vụ bảo mật sẽ được loại trừ, như khi thông tin đã được phổ biến rộng rãi trong công chúng hoặc được yêu cầu tiết lộ bởi cơ quan có thẩm quyền.
+GT: Không, trừ khi có sự đồng ý.
+Acc=0 | Overlap=0.57 | LLM=2
+
+---
+[69] Khi nào được phép tiết lộ thông tin?
+Pred: Thông tin chỉ được phép tiết lộ trong các trường hợp sau:
+
+1. Khi có sự đồng ý bằng văn bản của Bên tiết lộ.
+2. Nếu thông tin đã được phổ biến rộng rãi trong công chúng bởi Bên tiết lộ.
+3. Khi thông tin được cung cấp cho nhân viên, chuyên gia tư vấn tài chính, pháp lý hoặc nhà thầu của Bên Nhận để thực hiện Hợp Đồng, với điều kiện Bên Nhận phải đảm bảo các đối tượng này tuân thủ quy định bảo mật.
+4. Nếu thông tin được nhận từ một bên thứ ba không liên quan tới Hợp Đồng mà không chịu bất kỳ nghĩa vụ bảo mật nào.
+5. Khi có yêu cầu tiết lộ bởi cơ quan có thẩm quyền hoặc bất kỳ tòa án có thẩm quyền xét xử đối với Bên Nhận.
+
+Các trường hợp này được quy định trong Điều 8.2 của chính sách bảo mật thông tin.
+GT: Khi theo yêu cầu pháp luật hoặc đã công khai.
+Acc=0 | Overlap=0.70 | LLM=3
+
+---
+[70] Có thể chia sẻ cho nhân viên không?
+Pred: Tuyệt đối không chia sẻ tài khoản cho người khác chạy chung. Nếu tài xế có hành vi chia sẻ tài khoản cho người khác, tài khoản sẽ bị khóa và bị ngừng hợp tác vĩnh viễn.
+GT: Có, nếu phục vụ hợp đồng và đảm bảo bảo mật.
+Acc=0 | Overlap=0.30 | LLM=1
+
+---
+[71] Vi phạm bảo mật có hậu quả gì?
+Pred: Việc vi phạm nghĩa vụ bảo mật thông tin có thể gây ra những tổn hại không thể khôi phục được cho Bên tiết lộ. Do đó, Bên tiết lộ có quyền tìm kiếm các biện pháp để giảm nhẹ thiệt hại và buộc Bên Nhận bồi thường toàn bộ thiệt hại với mức không thấp hơn Giá trị Hợp Đồng.
+GT: Phải bồi thường thiệt hại lớn.
+Acc=0 | Overlap=0.67 | LLM=3
+
+---
+[72] Thông tin công khai có phải bảo mật không?
+Pred: Thông tin công khai không được coi là Thông Tin Mật và do đó không cần phải bảo mật. Theo quy định, nghĩa vụ bảo mật sẽ được loại trừ nếu thông tin đã được phổ biến rộng rãi trong công chúng bởi Bên tiết lộ.
+GT: Không.
+Acc=0 | Overlap=0.00 | LLM=3
+
+---
+[73] Có cần bảo mật sau khi hợp đồng kết thúc không?
+Pred: Có, theo ngữ cảnh, cả KH và GSM cam kết rằng nghĩa vụ bảo mật thông tin mật vẫn phải được thực hiện ngay cả sau khi hợp đồng chấm dứt. Bên Nhận phải tuyệt đối bảo mật các thông tin mật và không được tiết lộ cho bất kỳ bên thứ ba nào khi không có sự đồng ý bằng văn bản của Bên tiết lộ.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=5
+
+---
+[74] Có thể nhận thông tin từ bên thứ ba không?
+Pred: Có, Xanh SM có thể nhận thông tin từ bên thứ ba, nhưng chỉ trong các trường hợp cụ thể như khi bên thứ ba đó cung cấp thông tin mà không chịu bất kỳ nghĩa vụ bảo mật nào. Tuy nhiên, Xanh SM sẽ không tiết lộ dữ liệu cá nhân của bạn cho bên thứ ba trừ khi việc tiết lộ đó là cần thiết để xử lý yêu cầu của bạn và bạn đã đồng ý với các quy định về bảo mật và bảo vệ dữ liệu cá nhân của bên thứ ba.
+GT: Có, nếu không có nghĩa vụ bảo mật.
+Acc=0 | Overlap=0.75 | LLM=3
+
+---
+[75] Có thể bị kiện vì lộ thông tin không?
+Pred: Có, bạn có thể bị kiện nếu vi phạm nghĩa vụ bảo mật thông tin, dẫn đến việc lộ thông tin mật. Việc vi phạm này có thể gây ra những tổn hại không thể khôi phục được cho bên tiết lộ, và bên tiết lộ có quyền tìm kiếm các biện pháp để giảm nhẹ thiệt hại và yêu cầu bồi thường.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=5
+
+---
+[76] Thông tin tài chính có phải bảo mật không?
+Pred: Có, thông tin tài chính được coi là Thông Tin Mật và phải được bảo mật theo quy định trong hợp đồng. Bên Nhận không được tiết lộ thông tin này cho bất kỳ bên thứ ba nào mà không có sự đồng ý bằng văn bản của Bên tiết lộ, trừ những trường hợp được quy định trong Điều 8.2.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=4
+
+---
+[77] Bên nhận thông tin có trách nhiệm gì?
+Pred: Bên nhận thông tin có trách nhiệm bảo mật thông tin mà họ nhận được. Cụ thể, họ phải đảm bảo rằng thông tin mật không bị tiết lộ cho bên thứ ba mà không có sự đồng ý của bên tiết lộ. Nếu thông tin mật được cung cấp cho nhân viên, chuyên gia tư vấn hoặc nhà thầu, bên nhận phải đảm bảo rằng các đối tượng này cũng tuân thủ quy định bảo mật. Ngoài ra, bên nhận cũng phải chịu trách nhiệm nếu có vi phạm nghĩa vụ bảo mật, có thể gây ra tổn hại cho bên tiết lộ và phải bồi thường thiệt hại theo quy định.
+GT: Phải bảo mật tuyệt đối.
+Acc=1 | Overlap=0.60 | LLM=4
+
+---
+[78] Có được hối lộ nhân sự GSM không?
+Pred: Không, KH không được thực hiện hoặc thông qua bên thứ ba thực hiện hành vi hối lộ dưới bất kỳ hình thức nào đối với nhân sự GSM. Nếu phát hiện hành vi đòi hối lộ, KH phải thông báo ngay qua Email: v.thanhtraGSM@xanhsm.com.
+GT: Không.
+Acc=1 | Overlap=0.00 | LLM=5
+
+---
+[79] Nếu phát hiện hối lộ phải làm gì?
+Pred: Nếu phát hiện hành vi đòi hối lộ, bạn phải thông báo ngay qua Email: v.thanhtraGSM@xanhsm.com.
+GT: Phải báo qua email thanh tra.
+Acc=1 | Overlap=0.50 | LLM=4
+
+---
+[80] Mức phạt hối lộ là bao nhiêu?
+Pred: Mức phạt hối lộ là 150.000.000 VNĐ/lần hoặc 10% giá trị Hợp Đồng, tùy thuộc số tiền nào lớn hơn.
+GT: 150 triệu hoặc 10% hợp đồng.
+Acc=1 | Overlap=0.50 | LLM=5
+
+---
+[81] Có thể bị chấm dứt hợp đồng vì hối lộ không?
+Pred: Trong ngữ cảnh đã cung cấp, không có thông tin cụ thể về việc chấm dứt hợp đồng do hành vi hối lộ. Tuy nhiên, Điều 9.1 quy định rằng Khách Hàng không được thực hiện hoặc thông qua bên thứ ba thực hiện hành vi hối lộ đối với nhân sự của GSM. Nếu phát hiện hành vi này, Khách Hàng phải thông báo ngay. Điều này ngụ ý rằng hành vi hối lộ có thể dẫn đến các hậu quả nghiêm trọng, có thể bao gồm việc chấm dứt hợp đồng, nhưng không được nêu rõ trong văn bản. Do đó, tôi không có thông tin cụ thể để khẳng định chắc chắn về việc chấm dứt hợp đồng trong trường hợp này.
+GT: Có.
+Acc=0 | Overlap=0.00 | LLM=3
+
+---
+[82] Có thể bị chuyển cơ quan điều tra không?
+Pred: Trong ngữ cảnh đã cung cấp, nếu máy chủ lưu trữ dữ liệu bị tấn công dẫn đến mất, lộ, lọt Dữ Liệu Cá Nhân, Công Ty sẽ có trách nhiệm thông báo vụ việc cho cơ quan chức năng để điều tra xử lý. Tuy nhiên, không có thông tin cụ thể về việc có thể bị chuyển cơ quan điều tra hay không. Nếu bạn cần thông tin chi tiết hơn, có thể liên hệ với cơ quan chức năng hoặc bộ phận hỗ trợ của Công Ty.
+GT: Có.
+Acc=0 | Overlap=0.00 | LLM=2
+
+---
+[83] Có phải hoàn trả tiền đã nhận không?
+Pred: Trong ngữ cảnh đã cung cấp, không có thông tin cụ thể về việc hoàn trả tiền đã nhận. Nếu bạn đang hỏi về một trường hợp cụ thể, vui lòng cung cấp thêm chi tiết để tôi có thể hỗ trợ tốt hơn.
+GT: Có.
+Acc=0 | Overlap=0.00 | LLM=1
+
+---
+[84] Có bị cấm tham gia thầu không?
+Pred: Có, nếu Khách Hàng (KH) vi phạm quy định, GSM có quyền cấm tham gia các gói thầu khác.
+GT: Có.
+Acc=0 | Overlap=0.00 | LLM=3
+
+---
+[85] Có phải bồi thường thiệt hại không?
+Pred: Có, Người dùng phải bồi thường toàn bộ thiệt hại xảy ra cho Xanh SM, Đối tác và các Bên liên quan trong một số trường hợp nhất định, như khi thiệt hại xảy ra do lỗi của Người dùng, hàng hóa thuộc danh mục cấm hoặc hạn chế, hoặc hàng hóa không được đóng gói đúng quy cách dẫn đến hư hỏng.
+GT: Có.
+Acc=0 | Overlap=0.00 | LLM=3
+
+---
+[86] KH có trách nhiệm gì khi vi phạm?
+Pred: Khi KH vi phạm quy định, GSM có quyền thực hiện các biện pháp sau:
+
+1. Hủy kết quả lựa chọn nhà thầu hoặc cấm tham gia các gói thầu khác.
+2. Hủy các phê duyệt liên quan đến Hợp Đồng.
+3. Phạt vi phạm 150.000.000 VNĐ/lần hoặc 10% giá trị Hợp Đồng, tùy thuộc số tiền nào lớn hơn.
+4. Chấm dứt Hợp Đồng ngay lập tức.
+5. Yêu cầu hoàn trả khoản đã nhận, bồi thường thiệt hại và các chế tài khác theo Hợp Đồng.
+6. Chuyển vụ việc đến cơ quan điều tra có thẩm quyền.
+
+Ngoài ra, KH cũng cam kết miễn trừ trách nhiệm cho GSM và bồi thường mọi thiệt hại, bao gồm chi phí hành chính, pháp lý và các chi phí liên quan nếu vi phạm quy định pháp luật về hối lộ.
+GT: Phải bồi thường toàn bộ thiệt hại.
+Acc=1 | Overlap=0.43 | LLM=4
+
+---
+[87] Có thể thông qua bên thứ ba hối lộ không?
+Pred: Không, KH không được thực hiện hoặc thông qua bên thứ ba thực hiện hành vi hối lộ dưới bất kỳ hình thức nào đối với nhân sự GSM. Nếu phát hiện hành vi đòi hối lộ, KH phải thông báo ngay qua Email: v.thanhtraGSM@xanhsm.com.
+GT: Không.
+Acc=1 | Overlap=0.00 | LLM=5
+
+---
+[88] Có miễn trừ trách nhiệm cho GSM không?
+Pred: Có, GSM được miễn trừ trách nhiệm trong một số trường hợp. Cụ thể, GSM sẽ không chịu trách nhiệm nếu Khách Hàng và/hoặc Người Sử Dụng tiết lộ thông tin truy cập dẫn đến việc người khác sử dụng trái phép tài khoản mà không thông báo ngay cho đại diện GSM để phong tỏa tài khoản. Nếu việc tiết lộ này dẫn đến phát sinh phí dịch vụ, Khách Hàng sẽ phải hoàn toàn chịu trách nhiệm và thanh toán số tiền cước vận tải phát sinh cho GSM.
+GT: Có.
+Acc=0 | Overlap=0.00 | LLM=3
+
+---
+[89] Hàng hóa phải đáp ứng điều kiện gì?
+Pred: Hàng hóa phải đáp ứng các điều kiện sau:
+
+1. Không vi phạm quy định pháp luật về giao thông đối với phương tiện lưu thông trên đường và đảm bảo nguyên tắc an toàn.
+2. Không thuộc danh mục hàng hóa cấm lưu thông hoặc hàng hóa không được phép vận chuyển theo quy định pháp luật.
+3. Đối tác và/hoặc Xanh SM có quyền kiểm tra hàng hóa nếu có nghi ngờ về tính hợp pháp hoặc an toàn của hàng hóa. 
+
+Ngoài ra, để được bồi thường trong trường hợp hàng hóa bị mất, hư hỏng hoặc tráo đổi, hàng hóa cần có hóa đơn hợp pháp và mô tả trên hóa đơn phải phù hợp với mô tả mà người dùng tự ghi trên đơn hàng.
+GT: Không thuộc hàng cấm và có đầy đủ thông tin.
+Acc=1 | Overlap=0.70 | LLM=4
+
+---
+[90] Ai chịu trách nhiệm đóng gói hàng?
+Pred: Đối tác vận chuyển có trách nhiệm đảm bảo rằng hàng hóa đã được đóng gói đúng quy cách và đầy đủ trước khi giao hàng. Cụ thể, Đối tác phải cam đoan và bảo đảm rằng hàng hóa đã được xếp gọn, dán nhãn và đánh dấu đúng cách.
+GT: Người dùng.
+Acc=0 | Overlap=0.00 | LLM=1
+
+---
+[91] Nếu thông tin sai thì ai chịu?
+Pred: Theo ngữ cảnh, nếu có sai sót trong quản lý người sử dụng (NSD), tài khoản quản lý (TKQL) và/hoặc tài khoản sử dụng dịch vụ (TKUD) bị chiếm đoạt bởi người khác do lỗi của khách hàng (KH) và/hoặc NSD, thì KH/NSD vẫn phải thanh toán đầy đủ phí dịch vụ cho các trường hợp sai sót này. Do đó, KH sẽ chịu trách nhiệm trong trường hợp thông tin sai do lỗi của mình.
+GT: Người dùng.
+Acc=0 | Overlap=0.50 | LLM=1
+
+---
+[92] Đối tác có thể từ chối hàng không?
+Pred: Có, Đối tác có quyền từ chối cung cấp Sản Phẩm nếu Hàng hóa quá khổ mà Đối tác đánh giá là có khả năng vi phạm quy định pháp luật về giao thông hoặc không đảm bảo nguyên tắc an toàn. Ngoài ra, Đối tác cũng có quyền từ chối nếu nghi ngờ Hàng hóa thuộc danh mục hàng hóa cấm lưu thông hoặc không được phép vận chuyển theo quy định pháp luật.
+GT: Có, nếu hàng nguy hiểm hoặc vi phạm.
+Acc=1 | Overlap=0.62 | LLM=4
+
+---
+[93] Hàng hóa có cần giấy tờ không?
+Pred: Có, người dùng phải đảm bảo có đầy đủ giấy tờ hợp pháp về hàng hóa và cung cấp cho đối tác vận chuyển và/hoặc Xanh SM trước khi thực hiện vận chuyển.
+GT: Có.
+Acc=1 | Overlap=0.00 | LLM=4
+
+---
+[94] Nếu hàng bị hư hỏng do đóng gói sai?
+Pred: Nếu hàng hóa bị hư hỏng do đóng gói sai, người dùng sẽ phải bồi thường toàn bộ thiệt hại xảy ra cho Xanh SM, Đối tác và các bên liên quan (nếu có). Điều này được quy định trong phần trách nhiệm bồi thường của người dùng, nêu rõ rằng hàng hóa không đóng gói đúng quy cách dẫn đến bị vỡ và ảnh hưởng đến hàng hóa của các khách hàng khác sẽ phải chịu trách nhiệm.
+GT: Người dùng chịu trách nhiệm.
+Acc=1 | Overlap=1.00 | LLM=4
+
+---
+[95] Có được vận chuyển hàng cấm không?
+Pred: Không, bạn không được vận chuyển hàng cấm. Nếu phát hiện hàng cấm, bạn có quyền từ chối nhận hoặc giao và hủy đơn theo chỉ dẫn trên ứng dụng. Hàng cấm bao gồm ma túy, vũ khí, động vật sống, tiền tệ, và nhiều loại hàng hóa khác theo quy định pháp luật.
+GT: Không.
+Acc=1 | Overlap=0.00 | LLM=5
+
+---
+[96] Nếu mất hàng thì bồi thường thế nào?
+Pred: Nếu hàng hóa gửi bị mất, mức bồi thường sẽ được xác định như sau:
+
+1. **Thời gian khiếu nại**: Xanh SM/Đối tác chỉ xử lý các khiếu nại trong vòng 06 tháng kể từ ngày kết thúc thời gian toàn trình của hàng hóa (24 giờ kể từ khi hàng hóa được chấp nhận).
+
+2. **Mức bồi thường**:
+   - Nếu hàng hóa có hóa đơn GTGT: Bồi thường 70% giá trị hóa đơn bán ra hoặc 100% giá trị hóa đơn mua vào, nhưng không vượt quá 2.000.000đ (Hai triệu đồng).
+   - Nếu người dùng không cung cấp đủ hóa đơn hợp pháp: Bồi thường 04 lần cước phí sử dụng.
+
+Lưu ý rằng, để được bồi thường, người dùng cần có chứng từ xác nhận việc chấp nhận hàng hóa và chứng từ chứng minh việc sử dụng sản phẩm. Nếu không có các chứng từ này hoặc trong các trường hợp không đủ điều kiện bồi thường khác, người dùng sẽ không được bồi thường.
+GT: Theo hóa đơn hoặc tối đa 2 triệu nếu có hóa đơn.
+Acc=1 | Overlap=0.55 | LLM=4
+
+---
+[97] Nếu không có hóa đơn thì sao?
+Pred: Theo quy định, nếu không yêu cầu xuất hóa đơn trước khi chuyến đi kết thúc, Xanh SM sẽ không thể hỗ trợ xuất lại hóa đơn. Do đó, nếu bạn không có hóa đơn, rất tiếc nhưng sẽ không có cách nào để lấy lại hóa đơn cho chuyến đi đó.
+GT: Bồi thường 4 lần cước phí.
+Acc=0 | Overlap=0.00 | LLM=1
+
+---
+[98] Thời hạn khiếu nại mất hàng là bao lâu?
+Pred: Thời hạn khiếu nại mất hàng là 06 tháng kể từ ngày kết thúc thời gian toàn trình của Hàng hóa, tức là 24 giờ kể từ khi Hàng hóa được chấp nhận.
+GT: 6 tháng.
+Acc=1 | Overlap=0.00 | LLM=4
+
+---
+[99] Có bảo hiểm cho hàng hóa không?
+Pred: Có, Xanh SM cung cấp chương trình Bảo hiểm hàng hóa cho khách hàng khi sử dụng dịch vụ vận chuyển Xanh Express. Bảo hiểm này bảo vệ hàng hóa trước những mất mát, hư hỏng xảy ra trong quá trình giao hàng và bồi thường lên đến 100% giá trị hàng hóa theo chứng từ chứng minh giá trị. Người dùng cần mua Bảo hiểm hàng hóa cho các đơn hàng có giá trị cao thông qua ứng dụng.
+GT: Có, theo gói bảo hiểm.
+Acc=1 | Overlap=0.60 | LLM=5
+
+---
+[100] Nếu mua bảo hiểm thì bồi thường thế nào?
+Pred: Nếu Người dùng mua Bảo hiểm cho Hàng hóa có giá trị cao và trong trường hợp Đối tác làm hư hỏng hoặc mất Hàng hóa đó, mức bồi thường sẽ được xác định theo các quy định tại Chính sách Bảo hiểm, nhưng không vượt quá mức bồi thường tối đa của mỗi gói Bảo hiểm mà Người dùng đã chọn. Cụ thể như sau:
+
+- **Áp dụng với Tài liệu**:
+  - Gói Cơ bản: 500.000 VNĐ
+  - Gói Bạc: 1.000.000 VNĐ
+  - Gói Vàng: 1.000.000 VNĐ
+
+- **Áp dụng với Hàng hóa không phải Tài liệu**:
+  - Gói Cơ bản: 3.000.000 VNĐ
+  - Gói Bạc: 10.000.000 VNĐ
+  - Gói Vàng: 30.000.000 VNĐ
+
+Mức bồi thường sẽ được xem xét và xác định dựa trên các quy định trong Chính sách Bảo hiểm.
+GT: Theo chính sách bảo hiểm và giới hạn từng gói.
+Acc=1 | Overlap=0.60 | LLM=5
