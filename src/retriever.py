@@ -17,6 +17,7 @@ from config import (
     CHUNKS_PATH,
     DENSE_WEIGHT,
     EMBEDDING_MODEL,
+    RETRIEVER_CANDIDATE_K,
     RETRIEVER_TOP_K,
 )
 from src.embeddings import get_embedding_model
@@ -64,7 +65,7 @@ class HybridRetriever(BaseRetriever):
 
     bm25_top_k: int = BM25_TOP_K
     dense_top_k: int = RETRIEVER_TOP_K
-    final_top_k: int = RETRIEVER_TOP_K
+    final_top_k: int = RETRIEVER_CANDIDATE_K
     bm25_weight: float = BM25_WEIGHT
     dense_weight: float = DENSE_WEIGHT
 
